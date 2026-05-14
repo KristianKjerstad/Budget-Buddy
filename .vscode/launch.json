@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "backend (.NET 10)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build backend",
+            "program": "${workspaceFolder}/backend/bin/Debug/net10.0/backend",
+            "cwd": "${workspaceFolder}/backend",
+            "stopAtEntry": false,
+            "console": "integratedTerminal",
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "DOTNET_ROOT": "/opt/homebrew/opt/dotnet/libexec",
+                "PATH": "/opt/homebrew/bin:${env:PATH}"
+            },
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            }
+        }
+    ]
+}

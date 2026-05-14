@@ -1,0 +1,13 @@
+{
+    "dotnet.defaultSolution": "Budget-Buddy.sln",
+    "dotnetAcquisitionExtension.existingDotnetPath": [
+        {
+            "extensionId": "ms-dotnettools.csharp",
+            "path": "/opt/homebrew/bin/dotnet"
+        },
+        {
+            "extensionId": "ms-dotnettools.csdevkit",
+            "path": "/opt/homebrew/bin/dotnet"
+        }
+    ]
+}

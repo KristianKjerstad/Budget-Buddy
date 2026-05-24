@@ -1,4 +1,6 @@
 
+using backend.Models;
+
 namespace backend.Endpoints;
 
 public static class TransactionEndpoints
@@ -10,12 +12,10 @@ public static class TransactionEndpoints
         var group = app.MapGroup("/transactions").WithTags("Transactions");
         group.MapGet("/", () =>
         {
-            var mockTransactions = new List<object>
+            var mockTransactions = new List<Transaction>
             {
-                new { Id = 1, Amount = 100.0, Description = "Groceries" },
-                new { Id = 2, Amount = 50.0, Description = "Utilities" },
-                new { Id = 3, Amount = 200.0, Description = "Rent" },
-                new { Id = 4, Amount = 75.0, Description = "Entertainment" }
+                new Transaction { Id = Guid.NewGuid(), Source = "Salary", TransactionDate = DateTime.UtcNow, Description = "Monthly salary", Amount = 5000, CurrencyCode = "NOK", UserId = Guid.NewGuid() },
+                new Transaction { Id = Guid.NewGuid(), Source = "Groceries", TransactionDate = DateTime.UtcNow, Description = "Weekly groceries", Amount = -1500, CurrencyCode = "NOK", UserId = Guid.NewGuid() }
             };
             return Results.Ok(mockTransactions);
         });

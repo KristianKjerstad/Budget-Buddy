@@ -6,7 +6,7 @@ Budget Buddy is a personal finance web application. Users can import bank transa
 
 The app consists of two parts:
 - **Backend**: ASP.NET Core Web API (.NET 10) with Entity Framework Core for data access and JWT-based authentication
-- **Frontend**: React + TypeScript + Vite + Tailwind CSS
+- **Frontend**: Next.js (App Router) + React 19 + TypeScript + Tailwind CSS v4
 
 ---
 
@@ -23,7 +23,7 @@ The app consists of two parts:
 ### Folder Structure
 
 ```
-Fintrack.API/
+Backend/
 ├── Data/
 │   ├── AppDbContext.cs
 │   └── Migrations/
@@ -192,7 +192,7 @@ var userId = int.Parse(user.FindFirstValue(ClaimTypes.NameIdentifier)!);
 
 ### Database
 
-- **Local development**: SQLite (`fintrack.db` in project root)
+- **Local development**: SQLite (`budgetbuddy.db` in project root)
 - **Production**: PostgreSQL via Railway
 
 Switch is handled via environment config in `appsettings.json` vs `appsettings.Development.json`.
@@ -227,28 +227,48 @@ Duplicate detection: a transaction is considered a duplicate if `Date + Amount +
 
 ## Frontend Architecture
 
-- **React + TypeScript + Vite**
-- **Tailwind CSS** for styling
-- **Recharts** for graphs and charts
-- **Axios** for API calls, with a shared instance that attaches JWT token from localStorage
+- **Framework**: Next.js 16 (App Router) with React 19 + TypeScript
+- **Styling**: Tailwind CSS v4 (`app/globals.css`) with CSS variables and custom theme tokens
+- **UI Components**: shadcn/ui (`new-york` style) + Radix UI primitives + Lucide icons
+- **Charts**: Recharts
+- **Routing**: File-based routing under `frontend/app`
+- **Build/Run Scripts**:
+    - `npm run dev` uses `next dev --webpack` (local workaround for Turbopack root detection issues)
+    - `npm run dev:turbo` uses Turbopack
+    - `npm run build` uses `next build`
+
+### Current Frontend State
+
+- The current frontend is mostly UI-first and uses local/mock data in page components.
+- API integration with the backend is not implemented yet in the current Next.js pages.
+- There is no `app/login/page.tsx` route yet.
 
 ### Pages
 
-- `/login` — login and register
-- `/` — dashboard with spending charts
+- `/` — redirects to `/dashboard`
+- `/dashboard` — spending overview with charts and recent transactions
 - `/transactions` — upload CSV, view and categorize transactions
 - `/networth` — manage assets and liabilities, view net worth over time
 
+### Layout and Navigation
+
+- Global layout is defined in `app/layout.tsx`.
+- Desktop navigation uses `components/sidebar.tsx`.
+- Mobile navigation uses `components/mobile-header.tsx`.
+- Vercel Analytics is enabled in production (`@vercel/analytics/next`).
+
 ### API Communication
 
-Always use a shared Axios instance with the JWT token attached:
+When integrating the backend API, use a shared API client module (for example `lib/api.ts`) and centralize auth/header handling in one place.
+
+If using Axios in Next.js, prefer `NEXT_PUBLIC_API_URL` for client-side base URL configuration:
 
 ```typescript
 // lib/api.ts
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL,
+    baseURL: process.env.NEXT_PUBLIC_API_URL,
 });
 
 api.interceptors.request.use(config => {
@@ -259,6 +279,13 @@ api.interceptors.request.use(config => {
 
 export default api;
 ```
+
+### Frontend Deployment (Vercel)
+
+- Deploy from the repo root with **Root Directory** set to `frontend`.
+- Framework preset must be **Next.js**.
+- Build command: `npm run build`.
+- Output directory: leave empty (Next.js default).
 
 ---
 

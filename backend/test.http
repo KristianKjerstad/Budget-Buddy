@@ -1,0 +1,17 @@
+###
+GET https://localhost:7266/transactions
+
+
+###
+
+GET https://localhost:7266/
+
+
+###
+
+GET http://localhost:5205/transactions
+
+
+###
+
+GET http://localhost:5205/

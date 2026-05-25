@@ -2,6 +2,7 @@
 using backend.Models;
 using backend.Services;
 using backend.Data;
+using backend.DTOs.Transactions;
 using Microsoft.EntityFrameworkCore;
 
 namespace backend.Endpoints;
@@ -15,12 +16,36 @@ public static class TransactionEndpoints
         // GET all transactions for a user
         group.MapGet("/", async (BackendContext db, Guid userId) =>
         {
-            var transactions = await Task.FromResult(db.Transactions
+            var transactions = await db.Transactions
                 .Where(t => t.UserId == userId)
                 .Include(t => t.Category)
-                .ToList());
+                .Select(t => new TransactionResponseDto
+                {
+                    Id = t.Id,
+                    Source = t.Source,
+                    TransactionDate = t.TransactionDate,
+                    Description = t.Description,
+                    Amount = t.Amount,
+                    CurrencyCode = t.CurrencyCode,
+                    CategoryId = t.CategoryId,
+                    Category = t.Category == null
+                        ? null
+                        : new TransactionCategoryDto
+                        {
+                            Id = t.Category.Id,
+                            Name = t.Category.Name,
+                            Description = t.Category.Description,
+                        },
+                    UserId = t.UserId,
+                    CreatedAtUtc = t.CreatedAtUtc,
+                    UpdatedAtUtc = t.UpdatedAtUtc,
+                })
+                .ToListAsync();
+
             return Results.Ok(transactions);
-        }).WithName("GetTransactions");
+        })
+        .WithName("GetTransactions")
+        .Produces<List<TransactionResponseDto>>(StatusCodes.Status200OK);
 
         // POST CSV file upload
         group.MapPost("/import", async (
@@ -49,24 +74,33 @@ public static class TransactionEndpoints
                     var transactions = await csvParser.ParseCsvAsync(stream, userId, csvFormat);
                     var saved = await csvParser.SaveTransactionsAsync(transactions);
                     var skippedDuplicates = transactions.Count - saved;
-                    return Results.Ok(new
+                    return Results.Ok(new ImportTransactionsResponseDto
                     {
-                        message = $"Parsed {transactions.Count} transaction(s), imported {saved}, skipped {skippedDuplicates} duplicate(s).",
-                        parsed = transactions.Count,
-                        imported = saved,
-                        skippedDuplicates
+                        Message = $"Parsed {transactions.Count} transaction(s), imported {saved}, skipped {skippedDuplicates} duplicate(s).",
+                        Parsed = transactions.Count,
+                        Imported = saved,
+                        SkippedDuplicates = skippedDuplicates,
                     });
                 }
             }
             catch (InvalidOperationException ex)
             {
-                return Results.BadRequest(new { error = ex.Message });
+                return Results.BadRequest(new ApiErrorDto { Error = ex.Message });
             }
             catch (Exception ex)
             {
-                return Results.Json(new { error = "Failed to parse CSV file.", details = ex.Message }, statusCode: 500);
+                return Results.Json(
+                    new ApiErrorDto
+                    {
+                        Error = "Failed to parse CSV file.",
+                        Details = ex.Message,
+                    },
+                    statusCode: StatusCodes.Status500InternalServerError);
             }
         }).WithName("ImportTransactions")
+          .Produces<ImportTransactionsResponseDto>(StatusCodes.Status200OK)
+          .Produces<ApiErrorDto>(StatusCodes.Status400BadRequest)
+          .Produces<ApiErrorDto>(StatusCodes.Status500InternalServerError)
           .DisableAntiforgery();
     }
 }

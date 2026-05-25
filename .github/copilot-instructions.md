@@ -223,6 +223,18 @@ The parser detects format automatically based on header row content.
 
 Duplicate detection: a transaction is considered a duplicate if `Date + Amount + Description` already exists for the same account.
 
+### OpenAPI and API Docs
+
+The backend exposes an OpenAPI document and a Swagger UI page from ASP.NET Core minimal APIs.
+
+- Register the document with `builder.Services.AddOpenApi("v1")`.
+- Expose the JSON document with `app.MapOpenApi()`.
+- Expose Swagger UI with `app.UseSwaggerUI(...)` and point it to `/openapi/v1.json`.
+- OpenAPI JSON route: `/openapi/v1.json`
+- Swagger UI route: `/swagger`
+
+When changing public endpoints, keep the OpenAPI output valid so frontend client generation continues to work.
+
 ---
 
 ## Frontend Architecture
@@ -290,6 +302,29 @@ Implementation notes:
 ### API Communication
 
 When integrating the backend API, use a shared API client module (for example `lib/api.ts`) and centralize auth/header handling in one place.
+
+### Generated API Client
+
+The frontend API client can be generated from the backend OpenAPI document.
+
+- Generation script: `Scripts/generate-openapi-spec.sh`
+- Generator: `openapitools/openapi-generator-cli`
+- Input spec: backend `/openapi/v1.json`
+- Output folder: `frontend/generated/api`
+- Current generator target: `typescript-axios`
+
+Generation workflow:
+
+- Start the backend locally so `http://localhost:5205/openapi/v1.json` is available.
+- Run `./Scripts/generate-openapi-spec.sh` from the repository root.
+- The script validates the host OpenAPI URL first, then runs Docker with the repo mounted at `/workspace`.
+
+Implementation notes:
+
+- The script uses `HOST_OPENAPI_URL` for the host-side preflight check.
+- The script uses `DOCKER_OPENAPI_URL` for the URL accessed from inside the Docker container.
+- Override those environment variables only when local port or Docker networking differs from the default setup.
+- Prefer consuming generated types/clients from `frontend/generated/api` instead of hand-writing duplicate request/response types for backend endpoints.
 
 If using Axios in Next.js, prefer `NEXT_PUBLIC_API_URL` for client-side base URL configuration:
 

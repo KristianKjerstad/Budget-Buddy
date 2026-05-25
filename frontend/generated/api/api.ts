@@ -23,6 +23,168 @@ import type { RequestArgs } from './base';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, BaseAPI, RequiredError, operationServerMap } from './base';
 
+/**
+ * 
+ * @export
+ * @interface ApiErrorDto
+ */
+export interface ApiErrorDto {
+    /**
+     * 
+     * @type {string}
+     * @memberof ApiErrorDto
+     */
+    'error'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof ApiErrorDto
+     */
+    'details'?: string | null;
+}
+/**
+ * 
+ * @export
+ * @interface ImportTransactionsResponseDto
+ */
+export interface ImportTransactionsResponseDto {
+    /**
+     * 
+     * @type {string}
+     * @memberof ImportTransactionsResponseDto
+     */
+    'message'?: string;
+    /**
+     * 
+     * @type {ImportTransactionsResponseDtoParsed}
+     * @memberof ImportTransactionsResponseDto
+     */
+    'parsed'?: ImportTransactionsResponseDtoParsed;
+    /**
+     * 
+     * @type {ImportTransactionsResponseDtoParsed}
+     * @memberof ImportTransactionsResponseDto
+     */
+    'imported'?: ImportTransactionsResponseDtoParsed;
+    /**
+     * 
+     * @type {ImportTransactionsResponseDtoParsed}
+     * @memberof ImportTransactionsResponseDto
+     */
+    'skippedDuplicates'?: ImportTransactionsResponseDtoParsed;
+}
+/**
+ * 
+ * @export
+ * @interface ImportTransactionsResponseDtoParsed
+ */
+export interface ImportTransactionsResponseDtoParsed {
+}
+/**
+ * 
+ * @export
+ * @interface TransactionCategoryDto
+ */
+export interface TransactionCategoryDto {
+    /**
+     * 
+     * @type {string}
+     * @memberof TransactionCategoryDto
+     */
+    'id'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof TransactionCategoryDto
+     */
+    'name'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof TransactionCategoryDto
+     */
+    'description'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface TransactionResponseDto
+ */
+export interface TransactionResponseDto {
+    /**
+     * 
+     * @type {string}
+     * @memberof TransactionResponseDto
+     */
+    'id'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof TransactionResponseDto
+     */
+    'source'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof TransactionResponseDto
+     */
+    'transactionDate'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof TransactionResponseDto
+     */
+    'description'?: string;
+    /**
+     * 
+     * @type {TransactionResponseDtoAmount}
+     * @memberof TransactionResponseDto
+     */
+    'amount'?: TransactionResponseDtoAmount;
+    /**
+     * 
+     * @type {string}
+     * @memberof TransactionResponseDto
+     */
+    'currencyCode'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof TransactionResponseDto
+     */
+    'categoryId'?: string | null;
+    /**
+     * 
+     * @type {TransactionCategoryDto}
+     * @memberof TransactionResponseDto
+     */
+    'category'?: TransactionCategoryDto | null;
+    /**
+     * 
+     * @type {string}
+     * @memberof TransactionResponseDto
+     */
+    'userId'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof TransactionResponseDto
+     */
+    'createdAtUtc'?: string;
+    /**
+     * 
+     * @type {string}
+     * @memberof TransactionResponseDto
+     */
+    'updatedAtUtc'?: string;
+}
+/**
+ * 
+ * @export
+ * @interface TransactionResponseDtoAmount
+ */
+export interface TransactionResponseDtoAmount {
+}
 
 /**
  * BackendApi - axios parameter creator
@@ -233,7 +395,7 @@ export const TransactionsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getTransactions(userId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async getTransactions(userId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<TransactionResponseDto>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getTransactions(userId, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['TransactionsApi.getTransactions']?.[localVarOperationServerIndex]?.url;
@@ -247,7 +409,7 @@ export const TransactionsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async importTransactions(format: string, userId: string, file: File, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async importTransactions(format: string, userId: string, file: File, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ImportTransactionsResponseDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.importTransactions(format, userId, file, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['TransactionsApi.importTransactions']?.[localVarOperationServerIndex]?.url;
@@ -269,7 +431,7 @@ export const TransactionsApiFactory = function (configuration?: Configuration, b
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getTransactions(userId: string, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+        getTransactions(userId: string, options?: RawAxiosRequestConfig): AxiosPromise<Array<TransactionResponseDto>> {
             return localVarFp.getTransactions(userId, options).then((request) => request(axios, basePath));
         },
         /**
@@ -280,7 +442,7 @@ export const TransactionsApiFactory = function (configuration?: Configuration, b
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        importTransactions(format: string, userId: string, file: File, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+        importTransactions(format: string, userId: string, file: File, options?: RawAxiosRequestConfig): AxiosPromise<ImportTransactionsResponseDto> {
             return localVarFp.importTransactions(format, userId, file, options).then((request) => request(axios, basePath));
         },
     };

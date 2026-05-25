@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import { AppShell } from '@/components/app-shell'
+import { QueryProvider } from '@/components/query-provider'
+import { Toaster } from '@/components/ui/toaster'
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -37,7 +39,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-background">
       <body className={`${inter.variable} font-sans antialiased`}>
-        <AppShell>{children}</AppShell>
+        <QueryProvider>
+          <AppShell>{children}</AppShell>
+          <Toaster />
+        </QueryProvider>
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>

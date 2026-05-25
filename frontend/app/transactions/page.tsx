@@ -1,8 +1,9 @@
 "use client"
 
-import { useState, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import { PageHeader } from "@/components/page-header"
 import { Button } from "@/components/ui/button"
+import { useTransactions } from "@/hooks/use-transactions"
 import {
   Upload,
   Search,
@@ -294,12 +295,29 @@ function ImportPanel({ onClose }: { onClose: () => void }) {
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default function TransactionsPage() {
+  const { data: fetchedTransactions, error: transactionsError } = useTransactions()
   const [showImport, setShowImport] = useState(false)
   const [search, setSearch] = useState("")
   const [categoryFilter, setCategoryFilter] = useState("All categories")
   const [dateRange, setDateRange] = useState("all")
   const [sort, setSort] = useState<"newest" | "oldest" | "highest" | "lowest">("newest")
   const [page, setPage] = useState(1)
+
+  useEffect(() => {
+    if (!fetchedTransactions) {
+      return
+    }
+
+    console.log("Fetched transactions", fetchedTransactions)
+  }, [fetchedTransactions])
+
+  useEffect(() => {
+    if (!transactionsError) {
+      return
+    }
+
+    console.error("Failed to fetch transactions", transactionsError)
+  }, [transactionsError])
 
   // Parse date string "DD.MM.YYYY" to Date
   const parseDate = (dateStr: string) => {

@@ -2,8 +2,9 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { LayoutDashboard, Receipt, TrendingUp, User } from "lucide-react"
+import { LayoutDashboard, Receipt, TrendingUp } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { UserMenu } from "@/components/user-menu"
 
 const navItems = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
@@ -45,15 +46,11 @@ export function Sidebar() {
 
       {/* User section */}
       <div className="border-t border-white/10 p-4">
-        <div className="flex items-center gap-3">
-          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-primary text-sm font-medium text-white">
-            <User className="h-4 w-4" />
-          </div>
-          <div className="flex-1 overflow-hidden">
-            <p className="truncate text-sm font-medium text-white">John Doe</p>
-            <p className="truncate text-xs text-sidebar-muted">john@example.com</p>
-          </div>
-        </div>
+        <UserMenu
+          className="flex items-center gap-3"
+          textClassName="truncate text-sm font-medium text-white"
+          emailClassName="truncate text-xs text-sidebar-muted"
+        />
       </div>
     </aside>
   )

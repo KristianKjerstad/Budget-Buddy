@@ -2,8 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
-import { Sidebar } from '@/components/sidebar'
-import { MobileHeader } from '@/components/mobile-header'
+import { AppShell } from '@/components/app-shell'
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -38,13 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-background">
       <body className={`${inter.variable} font-sans antialiased`}>
-        <div className="flex min-h-screen">
-          <Sidebar />
-          <MobileHeader />
-          <main className="flex-1 bg-background pt-14 px-4 pb-4 md:ml-60 md:pt-0 md:p-8">
-            {children}
-          </main>
-        </div>
+        <AppShell>{children}</AppShell>
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>

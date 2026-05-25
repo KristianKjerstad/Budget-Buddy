@@ -56,3 +56,6 @@ CodeCoverage/
 TestResult.xml
 nunit-*.xml
 launcSettings.json
+budgetbuddy.db
+budgetbuddy.db-shm
+budgetbuddy.db-wal

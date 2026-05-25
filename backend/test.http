@@ -9,9 +9,34 @@ GET https://localhost:7266/
 
 ###
 
-GET http://localhost:5205/transactions
+GET http://localhost:5205/transactions?userId=7C4BF30D-7D2C-419C-8B96-53EF215FD7EE
 
 
 ###
 
 GET http://localhost:5205/
+
+
+
+### Import SAS Mastercard CSV
+POST http://localhost:5205/transactions/import?format=SasMastercard&userId=7c4bf30d-7d2c-419c-8b96-53ef215fd7ee
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename="sas_mc_transactions.csv"
+Content-Type: text/csv
+
+< ./testdata/sas_mc_transactions.csv
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+
+### Import Handelsbanken CSV
+POST http://localhost:5205/transactions/import?format=Handelsbanken&userId=7c4bf30d-7d2c-419c-8b96-53ef215fd7ee
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename="handelsbanken_transactions.csv"
+Content-Type: text/csv
+
+< ./testdata/handelsbanken_transactions.csv
+------WebKitFormBoundary7MA4YWxkTrZu0gW--

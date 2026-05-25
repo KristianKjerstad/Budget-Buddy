@@ -241,11 +241,12 @@ Duplicate detection: a transaction is considered a duplicate if `Date + Amount +
 
 - The current frontend is mostly UI-first and uses local/mock data in page components.
 - API integration with the backend is not implemented yet in the current Next.js pages.
-- There is no `app/login/page.tsx` route yet.
+- Frontend authentication is implemented with Supabase Auth and middleware route guards.
 
 ### Pages
 
-- `/` — redirects to `/dashboard`
+- `/` — redirects to `/dashboard` when authenticated, otherwise `/login`
+- `/login` — Supabase email/password login and account creation
 - `/dashboard` — spending overview with charts and recent transactions
 - `/transactions` — upload CSV, view and categorize transactions
 - `/networth` — manage assets and liabilities, view net worth over time
@@ -255,7 +256,36 @@ Duplicate detection: a transaction is considered a duplicate if `Date + Amount +
 - Global layout is defined in `app/layout.tsx`.
 - Desktop navigation uses `components/sidebar.tsx`.
 - Mobile navigation uses `components/mobile-header.tsx`.
+- `components/app-shell.tsx` hides dashboard navigation on `/login` and keeps app layout for authenticated pages.
 - Vercel Analytics is enabled in production (`@vercel/analytics/next`).
+
+### Frontend Authentication (Supabase)
+
+Use Supabase Auth for frontend session handling and route protection.
+
+- Required packages:
+    - `@supabase/supabase-js`
+    - `@supabase/ssr`
+- Environment variables (frontend `.env.local`):
+    - `NEXT_PUBLIC_SUPABASE_URL`
+    - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+- Supabase helpers:
+    - Browser client: `frontend/lib/supabase/client.ts`
+    - Server client: `frontend/lib/supabase/server.ts`
+    - Middleware session refresh/guard: `frontend/lib/supabase/middleware.ts`
+    - Next middleware entrypoint: `frontend/middleware.ts`
+
+Auth behavior requirements:
+
+- If user is not authenticated and visits any protected page (`/dashboard`, `/transactions`, `/networth`, `/`), redirect to `/login`.
+- If user is authenticated and visits `/login`, redirect to `/dashboard`.
+- Login screen should not render sidebar/mobile dashboard navigation.
+
+Implementation notes:
+
+- Use `supabase.auth.getUser()` in server components/pages when deciding redirects.
+- Keep token/session refresh in middleware by calling Supabase on each request matched by `middleware.ts` matcher.
+- Do not store Supabase tokens manually in localStorage; rely on Supabase-managed auth cookies.
 
 ### API Communication
 

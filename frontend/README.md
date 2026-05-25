@@ -24,6 +24,31 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+## Supabase Auth Setup
+
+1. Install dependencies:
+
+```bash
+npm install @supabase/supabase-js @supabase/ssr
+```
+
+2. Create `.env.local` from `.env.local.example` and set:
+
+```bash
+NEXT_PUBLIC_SUPABASE_URL=...
+NEXT_PUBLIC_SUPABASE_ANON_KEY=...
+```
+
+3. In Supabase Dashboard, enable the Email provider under Authentication.
+
+4. Start the app and open `/login`.
+
+Auth behavior:
+
+- Unauthenticated users are redirected to `/login`.
+- Authenticated users are redirected to `/dashboard`.
+- Session refresh and route guarding run via `middleware.ts` and `lib/supabase/middleware.ts`.
+
 ## Learn More
 
 To learn more, take a look at the following resources:

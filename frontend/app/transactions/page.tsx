@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import { PageHeader } from "@/components/page-header"
 import { Button } from "@/components/ui/button"
-import { useTransactions } from "@/hooks/use-transactions"
+import { useImportTransactions, useTransactions } from "@/hooks/use-transactions"
 import {
   Upload,
   Search,
@@ -14,86 +14,67 @@ import {
   Check,
   Calendar,
 } from "lucide-react"
+import { CsvFormat } from "@/lib/api"
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const CATEGORIES = [
   "All categories",
   "Food",
-  "Transport",
-  "Subscriptions",
   "Restaurant",
-  "Shopping",
-  "Income",
-  "Utilities",
+  "Bar",
+  "Transportation",
+  "Entertainment",
+  "Clothing",
+  "Travel",
+  "Subscription",
+  "Insurance",
+  "Vipps",
   "Other",
 ]
 
 const CATEGORY_COLORS: Record<string, string> = {
   Food: "#16A34A",
-  Transport: "#2563EB",
-  Subscriptions: "#9333EA",
-  Restaurant: "#F97316",
-  Shopping: "#EF4444",
-  Income: "#0EA5E9",
-  Utilities: "#64748B",
+  Restaurant: "#F59E0B",
+  Bar: "#EAB308",
+  Transportation: "#2563EB",
+  Entertainment: "#9333EA",
+  Clothing: "#EF4444",
+  Travel: "#0EA5E9",
+  Subscription: "#64748B",
+  Insurance: "#F97316",
+  Vipps: "#8B5CF6",
   Other: "#94A3B8",
 }
-
-const ALL_TRANSACTIONS = [
-  { id: 1,  date: "24.05.2026", description: "Rema 1000 Majorstuen",       category: "Food",          amount: -487.50,   account: "DNB Brukskonto" },
-  { id: 2,  date: "23.05.2026", description: "Netflix",                     category: "Subscriptions", amount: -179.00,   account: "DNB Visa" },
-  { id: 3,  date: "22.05.2026", description: "Spotify Premium",             category: "Subscriptions", amount: -119.00,   account: "DNB Visa" },
-  { id: 4,  date: "21.05.2026", description: "Espresso House Aker Brygge",  category: "Restaurant",    amount: -89.00,    account: "DNB Brukskonto" },
-  { id: 5,  date: "20.05.2026", description: "Circle K Smestad",            category: "Transport",     amount: -652.30,   account: "DNB Visa" },
-  { id: 6,  date: "19.05.2026", description: "Kiwi Frogner",                category: "Food",          amount: -312.40,   account: "DNB Brukskonto" },
-  { id: 7,  date: "18.05.2026", description: "Apotek 1",                    category: "Other",         amount: -198.00,   account: "DNB Brukskonto" },
-  { id: 8,  date: "17.05.2026", description: "Tim Wendelboe",               category: "Restaurant",    amount: -67.00,    account: "DNB Visa" },
-  { id: 9,  date: "16.05.2026", description: "Ruter MobileBillett",         category: "Transport",     amount: -399.00,   account: "DNB Visa" },
-  { id: 10, date: "15.05.2026", description: "Lønn mai",                    category: "Income",        amount: 45000.00,  account: "DNB Brukskonto" },
-  { id: 11, date: "14.05.2026", description: "H&M Oslo City",               category: "Shopping",      amount: -749.00,   account: "DNB Visa" },
-  { id: 12, date: "13.05.2026", description: "Coop Extra Grünerløkka",      category: "Food",          amount: -554.90,   account: "DNB Brukskonto" },
-  { id: 13, date: "12.05.2026", description: "HBO Max",                     category: "Subscriptions", amount: -99.00,    account: "DNB Visa" },
-  { id: 14, date: "11.05.2026", description: "Shell Lysaker",               category: "Transport",     amount: -820.00,   account: "DNB Visa" },
-  { id: 15, date: "10.05.2026", description: "Felleskostnader mai",         category: "Utilities",     amount: -3200.00,  account: "DNB Brukskonto" },
-  { id: 16, date: "09.05.2026", description: "Starbucks Aker Brygge",       category: "Restaurant",    amount: -72.00,    account: "DNB Visa" },
-  { id: 17, date: "08.05.2026", description: "IKEA Furuset",                category: "Shopping",      amount: -1249.00,  account: "DNB Visa" },
-  { id: 18, date: "07.05.2026", description: "Meny Bogstadveien",           category: "Food",          amount: -623.00,   account: "DNB Brukskonto" },
-  { id: 19, date: "06.05.2026", description: "Viaplay",                     category: "Subscriptions", amount: -199.00,   account: "DNB Visa" },
-  { id: 20, date: "05.05.2026", description: "Oslo Bysykkel",               category: "Transport",     amount: -49.00,    account: "DNB Visa" },
-  { id: 21, date: "04.05.2026", description: "Vinmonopolet",                category: "Other",         amount: -389.00,   account: "DNB Brukskonto" },
-  { id: 22, date: "03.05.2026", description: "Dolly Dimple's Grünerløkka", category: "Restaurant",    amount: -215.00,   account: "DNB Visa" },
-  { id: 23, date: "02.05.2026", description: "Sats treningssenter",         category: "Other",         amount: -449.00,   account: "DNB Brukskonto" },
-  { id: 24, date: "01.05.2026", description: "Zalando",                     category: "Shopping",      amount: -899.00,   account: "DNB Visa" },
-  { id: 25, date: "30.04.2026", description: "Rema 1000 Torshov",           category: "Food",          amount: -401.20,   account: "DNB Brukskonto" },
-  { id: 26, date: "29.04.2026", description: "Uber",                        category: "Transport",     amount: -189.00,   account: "DNB Visa" },
-  { id: 27, date: "28.04.2026", description: "Elkjøp",                      category: "Shopping",      amount: -2399.00,  account: "DNB Visa" },
-  { id: 28, date: "27.04.2026", description: "Kaffebrenneriet",             category: "Restaurant",    amount: -54.00,    account: "DNB Visa" },
-  { id: 29, date: "26.04.2026", description: "Telenor abonnement",          category: "Utilities",     amount: -429.00,   account: "DNB Brukskonto" },
-  { id: 30, date: "25.04.2026", description: "Lønn april",                  category: "Income",        amount: 45000.00,  account: "DNB Brukskonto" },
-  { id: 31, date: "24.04.2026", description: "Esso Skøyen",                 category: "Transport",     amount: -598.00,   account: "DNB Visa" },
-  { id: 32, date: "23.04.2026", description: "Kiwi Majorstuen",             category: "Food",          amount: -276.50,   account: "DNB Brukskonto" },
-  { id: 33, date: "22.04.2026", description: "Disney+",                     category: "Subscriptions", amount: -89.00,    account: "DNB Visa" },
-  { id: 34, date: "21.04.2026", description: "Lindex",                      category: "Shopping",      amount: -549.00,   account: "DNB Visa" },
-  { id: 35, date: "20.04.2026", description: "Strøm april",                 category: "Utilities",     amount: -892.00,   account: "DNB Brukskonto" },
-  { id: 36, date: "19.04.2026", description: "Sjokoladepiken",              category: "Restaurant",    amount: -128.00,   account: "DNB Visa" },
-  { id: 37, date: "18.04.2026", description: "Coop Extra Bislett",          category: "Food",          amount: -467.80,   account: "DNB Brukskonto" },
-  { id: 38, date: "17.04.2026", description: "Lydbøker.no",                 category: "Subscriptions", amount: -99.00,    account: "DNB Visa" },
-  { id: 39, date: "16.04.2026", description: "Flybuss Gardermoen",          category: "Transport",     amount: -229.00,   account: "DNB Visa" },
-  { id: 40, date: "15.04.2026", description: "Weekday",                     category: "Shopping",      amount: -699.00,   account: "DNB Visa" },
-  { id: 41, date: "14.04.2026", description: "Meny Bogstadveien",           category: "Food",          amount: -712.30,   account: "DNB Brukskonto" },
-  { id: 42, date: "13.04.2026", description: "Internett Altibox",           category: "Utilities",     amount: -599.00,   account: "DNB Brukskonto" },
-  { id: 43, date: "12.04.2026", description: "Foodora",                     category: "Restaurant",    amount: -349.00,   account: "DNB Visa" },
-  { id: 44, date: "11.04.2026", description: "Narvesen Oslo S",             category: "Other",         amount: -89.00,    account: "DNB Brukskonto" },
-  { id: 45, date: "10.04.2026", description: "Oslo City Kino",              category: "Other",         amount: -220.00,   account: "DNB Visa" },
-  { id: 46, date: "09.04.2026", description: "Rema 1000 Grunerløkka",       category: "Food",          amount: -389.60,   account: "DNB Brukskonto" },
-  { id: 47, date: "08.04.2026", description: "Vy tog",                      category: "Transport",     amount: -359.00,   account: "DNB Visa" },
-]
 
 const PAGE_SIZE = 12
 
 function formatNOK(amount: number): string {
   return `kr ${Math.abs(amount).toLocaleString("nb-NO", { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`
+}
+
+function formatTransactionDateTime(value: string): string {
+  const date = new Date(value)
+
+  if (Number.isNaN(date.getTime())) {
+    return value
+  }
+
+  const day = String(date.getDate()).padStart(2, "0")
+  const month = String(date.getMonth() + 1).padStart(2, "0")
+  const year = String(date.getFullYear())
+  const hours = String(date.getHours()).padStart(2, "0")
+  const minutes = String(date.getMinutes()).padStart(2, "0")
+
+  return `${day}.${month}.${year} ${hours}:${minutes}`
+}
+
+function getCategoryColor(categoryName?: string | null): string {
+  if (!categoryName) {
+    return "#94A3B8"
+  }
+
+  return CATEGORY_COLORS[categoryName] ?? "#94A3B8"
 }
 
 // ─── Category Dropdown (Filter only) ──────────────────────────────────────────
@@ -193,10 +174,24 @@ function DateRangeDropdown({
 // ─── Import Panel ─────────────────────────────────────────────────────────────
 
 function ImportPanel({ onClose }: { onClose: () => void }) {
-  const [bank, setBank] = useState<"handelsbanken" | "sas">("handelsbanken")
+  const [bank, setBank] = useState<CsvFormat>("Handelsbanken")
   const [dragOver, setDragOver] = useState(false)
   const [fileName, setFileName] = useState<string | null>(null)
   const fileRef = useRef<HTMLInputElement>(null)
+
+
+  const { mutate: importTransactions, isPending } = useImportTransactions()
+
+  const importFromFile = () => {
+    if (fileName) {
+      const fileInput = fileRef.current
+      if (fileInput && fileInput.files && fileInput.files[0]) {
+        importTransactions({ format: bank, file: fileInput.files[0] })
+      }
+    }
+  }
+
+  
 
   return (
     <div className="mb-6 rounded-xl border border-dashed border-border bg-card p-6">
@@ -212,7 +207,7 @@ function ImportPanel({ onClose }: { onClose: () => void }) {
 
       {/* Bank selector */}
       <div className="mb-5 grid grid-cols-2 gap-3">
-        {(["handelsbanken", "sas"] as const).map((b) => (
+        {(["Handelsbanken", "SasMastercard"] as const).map((b) => (
           <button
             key={b}
             onClick={() => setBank(b)}
@@ -222,12 +217,12 @@ function ImportPanel({ onClose }: { onClose: () => void }) {
                 : "border-border bg-background hover:border-primary/40"
             }`}
           >
-            <div className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-white text-xs font-bold ${b === "handelsbanken" ? "bg-[#0A3D62]" : "bg-[#1A1A2E]"}`}>
-              {b === "handelsbanken" ? "HB" : "SAS"}
+            <div className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-white text-xs font-bold ${b === "Handelsbanken" ? "bg-[#0A3D62]" : "bg-[#1A1A2E]"}`}>
+              {b === "Handelsbanken" ? "HB" : "SAS"}
             </div>
             <div>
               <p className="text-sm font-medium text-foreground">
-                {b === "handelsbanken" ? "Handelsbanken" : "SAS Mastercard"}
+                {b === "Handelsbanken" ? "Handelsbanken" : "SAS Mastercard"}
               </p>
               <p className="text-xs text-text-secondary">CSV export</p>
             </div>
@@ -280,7 +275,7 @@ function ImportPanel({ onClose }: { onClose: () => void }) {
       </div>
 
       <div className="flex gap-3">
-        <Button className="flex-1 bg-primary hover:bg-[#1D4ED8]">
+        <Button className="flex-1 bg-primary hover:bg-[#1D4ED8]" onClick={() => importFromFile()} disabled={isPending}>
           <Upload className="mr-2 h-4 w-4" />
           Import transactions
         </Button>
@@ -298,10 +293,12 @@ export default function TransactionsPage() {
   const { data: fetchedTransactions, error: transactionsError } = useTransactions()
   const [showImport, setShowImport] = useState(false)
   const [search, setSearch] = useState("")
-  const [categoryFilter, setCategoryFilter] = useState("All categories")
+  const [categoryFilter, setCategoryFilter] = useState<"All categories" | string>("All categories")
   const [dateRange, setDateRange] = useState("all")
   const [sort, setSort] = useState<"newest" | "oldest" | "highest" | "lowest">("newest")
   const [page, setPage] = useState(1)
+
+  const transactions = fetchedTransactions ?? []
 
   useEffect(() => {
     if (!fetchedTransactions) {
@@ -319,21 +316,26 @@ export default function TransactionsPage() {
     console.error("Failed to fetch transactions", transactionsError)
   }, [transactionsError])
 
-  // Parse date string "DD.MM.YYYY" to Date
   const parseDate = (dateStr: string) => {
-    const [day, month, year] = dateStr.split(".").map(Number)
-    return new Date(year, month - 1, day)
+    const date = new Date(dateStr)
+    return Number.isNaN(date.getTime()) ? null : date
   }
 
+  const getTimestamp = (dateStr: string) => parseDate(dateStr)?.getTime() ?? 0
+
   // Filter + sort
-  const filtered = ALL_TRANSACTIONS.filter((t) => {
+  const filtered = transactions.filter((t) => {
     const matchSearch = t.description.toLowerCase().includes(search.toLowerCase())
-    const matchCat = categoryFilter === "All categories" || t.category === categoryFilter
+    const matchCat = categoryFilter === "All categories" || t.category?.name === categoryFilter
 
     // Date range filter
     let matchDate = true
     if (dateRange !== "all") {
-      const txDate = parseDate(t.date)
+      const txDate = parseDate(t.transactionDate)
+      if (!txDate) {
+        return false
+      }
+
       const now = new Date()
       const today = new Date(now.getFullYear(), now.getMonth(), now.getDate())
 
@@ -359,8 +361,8 @@ export default function TransactionsPage() {
 
     return matchSearch && matchCat && matchDate
   }).sort((a, b) => {
-    if (sort === "newest") return b.id - a.id
-    if (sort === "oldest") return a.id - b.id
+    if (sort === "newest") return getTimestamp(b.transactionDate) - getTimestamp(a.transactionDate)
+    if (sort === "oldest") return getTimestamp(a.transactionDate) - getTimestamp(b.transactionDate)
     if (sort === "highest") return Math.abs(b.amount) - Math.abs(a.amount)
     return Math.abs(a.amount) - Math.abs(b.amount)
   })
@@ -409,7 +411,7 @@ export default function TransactionsPage() {
           />
           <select
             value={sort}
-            onChange={(e) => setSort(e.target.value as typeof sort)}
+            onChange={(e) => { setSort(e.target.value as typeof sort); setPage(1) }}
             className="h-9 rounded-lg border border-border bg-card px-3 text-sm text-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
           >
             <option value="newest">Newest first</option>
@@ -439,19 +441,19 @@ export default function TransactionsPage() {
                   key={t.id}
                   className="border-b border-border last:border-0 hover:bg-secondary/40 transition-colors"
                 >
-                  <td className="px-6 py-4 text-sm text-text-secondary whitespace-nowrap">{t.date}</td>
+                  <td className="px-6 py-4 text-sm text-text-secondary whitespace-nowrap">{formatTransactionDateTime(t.transactionDate)}</td>
                   <td className="px-6 py-4 text-sm font-medium text-foreground">{t.description}</td>
                   <td className="px-6 py-4">
                     <span
                       className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium text-white"
-                      style={{ backgroundColor: CATEGORY_COLORS[t.category] ?? "#94A3B8" }}
+                      style={{ backgroundColor: getCategoryColor(t.category?.name) }}
                     >
-                      {t.category}
+                      {t.category?.name ?? "Uncategorized"}
                     </span>
                   </td>
-                  <td className="px-6 py-4 text-sm text-text-secondary">{t.account}</td>
-                  <td className={`px-6 py-4 text-right text-sm font-semibold whitespace-nowrap ${t.amount >= 0 ? "text-success" : "text-destructive"}`}>
-                    {t.amount >= 0 ? "+" : "-"}{formatNOK(t.amount)}
+                  <td className="px-6 py-4 text-sm text-text-secondary">{t.source}</td>
+                  <td className="px-6 py-4 text-right text-sm font-semibold whitespace-nowrap text-destructive">
+                    -{formatNOK(t.amount)}
                   </td>
                 </tr>
               ))}
@@ -515,18 +517,18 @@ export default function TransactionsPage() {
           <div key={t.id} className="rounded-xl bg-card p-4 shadow-sm">
             <div className="flex items-start justify-between gap-2">
               <p className="flex-1 text-sm font-medium text-foreground leading-tight">{t.description}</p>
-              <p className={`text-sm font-semibold whitespace-nowrap ${t.amount >= 0 ? "text-success" : "text-destructive"}`}>
-                {t.amount >= 0 ? "+" : "-"}{formatNOK(t.amount)}
+              <p className="text-sm font-semibold whitespace-nowrap text-destructive">
+                -{formatNOK(t.amount)}
               </p>
             </div>
             <div className="mt-2 flex items-center justify-between">
               <span
                 className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium text-white"
-                style={{ backgroundColor: CATEGORY_COLORS[t.category] ?? "#94A3B8" }}
+                style={{ backgroundColor: getCategoryColor(t.category?.name) }}
               >
-                {t.category}
+                {t.category?.name ?? "Uncategorized"}
               </span>
-              <p className="text-xs text-text-muted">{t.date}</p>
+              <p className="text-xs text-text-muted">{formatTransactionDateTime(t.transactionDate)}</p>
             </div>
           </div>
         ))}

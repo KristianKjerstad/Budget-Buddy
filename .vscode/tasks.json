@@ -3,25 +3,41 @@
     "tasks": [
         {
             "label": "watch backend",
-            "type": "process",
-            "command": "dotnet",
+            "type": "shell",
+            "command": "/opt/homebrew/bin/dotnet",
             "args": [
                 "watch",
                 "run",
                 "--project",
                 "${workspaceFolder}/backend/backend.csproj"
             ],
+            "options": {
+                "shell": {
+                    "executable": "/bin/zsh",
+                    "args": [
+                        "-c"
+                    ]
+                }
+            },
             "isBackground": true,
             "problemMatcher": "$msCompile"
         },
         {
             "label": "build backend",
-            "command": "dotnet",
-            "type": "process",
+            "command": "/opt/homebrew/bin/dotnet",
+            "type": "shell",
             "args": [
                 "build",
                 "${workspaceFolder}/backend/backend.csproj"
             ],
+            "options": {
+                "shell": {
+                    "executable": "/bin/zsh",
+                    "args": [
+                        "-c"
+                    ]
+                }
+            },
             "problemMatcher": "$msCompile"
         }
     ]

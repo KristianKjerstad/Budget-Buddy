@@ -1,5 +1,18 @@
 {
     "dotnet.defaultSolution": "Budget-Buddy.sln",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.profiles.osx": {
+        "zsh": {
+            "path": "/bin/zsh"
+        }
+    },
+    "terminal.integrated.automationProfile.osx": {
+        "path": "/bin/zsh"
+    },
+    "terminal.integrated.env.osx": {
+        "PATH": "/opt/homebrew/bin:${env:PATH}"
+    },
+    "dotnetAcquisitionExtension.sharedExistingDotnetPath": "/opt/homebrew/bin/dotnet",
     "dotnetAcquisitionExtension.existingDotnetPath": [
         {
             "extensionId": "ms-dotnettools.csharp",
@@ -7,6 +20,10 @@
         },
         {
             "extensionId": "ms-dotnettools.csdevkit",
+            "path": "/opt/homebrew/bin/dotnet"
+        },
+        {
+            "extensionId": "ms-dotnettools.vscode-dotnet-runtime",
             "path": "/opt/homebrew/bin/dotnet"
         }
     ]

@@ -82,9 +82,13 @@ public class CsvParserService
             if (string.IsNullOrWhiteSpace(dateStr) || string.IsNullOrWhiteSpace(amountOutStr))
                 return null;
 
-            // Skip empty or summary rows
+            // Skip empty or summary rows, and internal transfers
             if (description?.Contains("Totalbeløp", StringComparison.OrdinalIgnoreCase) == true ||
-                description?.Contains("Saldo", StringComparison.OrdinalIgnoreCase) == true)
+                description?.Contains("Saldo", StringComparison.OrdinalIgnoreCase) == true ||
+                description?.Contains("SEB KORT AB", StringComparison.OrdinalIgnoreCase) == true ||
+                description?.Contains("til Sparekonto", StringComparison.OrdinalIgnoreCase) == true ||
+                description?.Contains("Til konto:", StringComparison.OrdinalIgnoreCase) == true ||
+                description?.Contains("12072209913", StringComparison.OrdinalIgnoreCase) == true)
                 return null;
 
             // Parse date first
@@ -117,7 +121,7 @@ public class CsvParserService
             {
                 TransactionDate = date,
                 Description = description ?? string.Empty,
-                Amount = amount,
+                Amount = amount*(-1), // Convert to positive amount for consistency (Handelsbanken uses negative for outgoing)
                 CurrencyCode = "NOK",
                 Source = "Handelsbanken",
                 UserId = userId,

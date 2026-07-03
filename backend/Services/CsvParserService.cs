@@ -263,12 +263,15 @@ public class CsvParserService
             ("MENY", "Food"),
             ("EXTRA", "Food"),
             ("JOKER", "Food"),
+            ("OBS", "Food"),
             ("NARVESEN", "Food"),
             
             // Restaurant/Dining
             ("MCDONALD", "Restaurant"),
+            ("MCDKONGENSGATE", "Restaurant"),
             ("MCDSOLSIDEN", "Restaurant"),
             ("BURGER KING", "Restaurant"),
+            ("BK", "Restaurant"),
             ("UBER EATS", "Restaurant"),
             ("WOLT", "Restaurant"),
             ("FOODORA", "Restaurant"),
@@ -294,6 +297,11 @@ public class CsvParserService
             ("ZETTLE_*TRONDER CUT", "Restaurant"),
             ("ZETTLE_*BEYOND", "Restaurant"),
             ("ZETTLE_*WORK-WORK", "Restaurant"),
+            ("W B SAMSON", "Restaurant")
+            ("HECTOR", "Restaurant"),
+            ("SUSHIME", "Restaurant"),
+            ("FUNKY FROZEN", "Restaurant"),
+
             
             // Bar/Nightlife
             ("BAR", "Bar"),
@@ -306,6 +314,8 @@ public class CsvParserService
             ("RAADHUSET", "Bar"),
             ("STD26", "Bar"),
             ("OIP NORWAY", "Bar"),
+            ("SAMFUNDET", "Bar"),
+                        ("TRONDHEIM CAMPING", "Bar"),
             
             // Transportation
             ("ATB", "Transportation"),
@@ -338,9 +348,9 @@ public class CsvParserService
             ("ZARA", "Clothing"),
             ("LINDEX", "Clothing"),
             ("WEEKDAY", "Clothing"),
-            ("NORMAL", "Clothing"),
-            ("THANSEN", "Clothing"),
             ("KREMMERHUSET", "Clothing"),
+            ("HM", "Other"),
+            ("ZALANDO", "Other"),
             
             // Travel
             ("HOTELCOM", "Travel"),
@@ -350,7 +360,6 @@ public class CsvParserService
             ("BOOKING.COM", "Travel"),
             ("AIRBNB", "Travel"),
             ("EXPEDIA", "Travel"),
-            ("TRONDHEIM CAMPING", "Travel"),
             ("HOTEL", "Travel"),
             
             // Subscription
@@ -363,6 +372,7 @@ public class CsvParserService
             ("HBO", "Subscription"),
             ("DISNEY", "Subscription"),
             ("LYDBØKER", "Subscription"),
+            ("")
             
             // Insurance
             ("TEKNA", "Insurance"),
@@ -370,7 +380,9 @@ public class CsvParserService
             ("GJENSIDIGE", "Insurance"),
             ("TRY", "Insurance"),
             ("IF SKADE", "Insurance"),
-            
+            ("FORSIKRING", "Insurance"),
+            ("DNB LIV", "Insurance"),
+            ("DNB FORSIKRING", "Insurance"),
             // Vipps
             ("VIPPS", "Vipps"),
             
@@ -381,7 +393,6 @@ public class CsvParserService
             ("BILTEMA", "Other"),
             ("CL. OHLSON", "Other"),
             ("HABITAT", "Other"),
-            ("ZALANDO", "Other"),
             ("AMAZON", "Other"),
             ("ELLKJØP", "Other"),
             ("ELECTRONIA", "Other"),
@@ -393,6 +404,12 @@ public class CsvParserService
             ("ROROS", "Other"),
             ("168 BOOTS", "Other"),
             ("APOTEK", "Other"),
+            ("KICKS", "Other"),
+            ("VITA", "Other"),
+            ("NORMAL", "Other"),
+            ("THANSEN", "Other"),
+            
+
         };
 
         foreach (var rule in categoryRules)

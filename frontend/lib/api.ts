@@ -1,4 +1,4 @@
-import axios, { type AxiosResponse, isAxiosError } from 'axios'
+import axios, { AxiosHeaders, type AxiosResponse, isAxiosError } from 'axios'
 import { Configuration, TransactionsApi } from '@/generated/api'
 import { createClient } from '@/lib/supabase/client'
 
@@ -33,12 +33,29 @@ export type CsvFormat = 'Handelsbanken' | 'SasMastercard'
 
 const apiBaseUrl = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:5205'
 
+const apiClient = axios.create()
+
+apiClient.interceptors.request.use(async (config) => {
+  const supabase = createClient()
+  const {
+    data: { session },
+  } = await supabase.auth.getSession()
+
+  if (session?.access_token) {
+    const headers = AxiosHeaders.from(config.headers)
+    headers.set('Authorization', `Bearer ${session.access_token}`)
+    config.headers = headers
+  }
+
+  return config
+})
+
 const transactionsApi = new TransactionsApi(
   new Configuration({
     basePath: apiBaseUrl,
   }),
   apiBaseUrl,
-  axios,
+  apiClient,
 )
 
 async function getCurrentUserId() {

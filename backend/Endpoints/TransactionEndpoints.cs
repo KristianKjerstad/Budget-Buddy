@@ -4,6 +4,7 @@ using backend.Services;
 using backend.Data;
 using backend.DTOs.Transactions;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace backend.Endpoints;
 
@@ -11,11 +12,17 @@ public static class TransactionEndpoints
 {
     public static void MapTransactionEndpoints(this WebApplication app)
     {
-        var group = app.MapGroup("/transactions").WithTags("Transactions");
+        var group = app.MapGroup("/transactions").WithTags("Transactions").RequireAuthorization();
 
         // GET all transactions for a user
-        group.MapGet("/", async (BackendContext db, Guid userId) =>
+        group.MapGet("/", async (BackendContext db, ClaimsPrincipal user) =>
         {
+            var userIdClaim = user.FindFirstValue(ClaimTypes.NameIdentifier) ?? user.FindFirstValue("sub");
+            if (!Guid.TryParse(userIdClaim, out var userId))
+            {
+                return Results.Unauthorized();
+            }
+
             var transactions = await db.Transactions
                 .Where(t => t.UserId == userId)
                 .Include(t => t.Category)
@@ -53,8 +60,14 @@ public static class TransactionEndpoints
             string format,
             BackendContext db,
             CsvParserService csvParser,
-            Guid userId) =>
+            ClaimsPrincipal user) =>
         {
+            var userIdClaim = user.FindFirstValue(ClaimTypes.NameIdentifier) ?? user.FindFirstValue("sub");
+            if (!Guid.TryParse(userIdClaim, out var userId))
+            {
+                return Results.Unauthorized();
+            }
+
             if (file == null || file.Length == 0)
                 return Results.BadRequest(new { error = "No file provided." });
 

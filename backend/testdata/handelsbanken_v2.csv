@@ -1,0 +1,474 @@
+Utført dato;Bokført dato;Rentedato;Beskrivelse;Type;Undertype;Fra konto;Avsender;Til konto;Mottakernavn;Beløp inn;Beløp ut;Valuta;Status;Melding/KID/Fakt.nr
+02.07.2026;02.07.2026;02.07.2026;FLYT AS (32073595222);Betaling innland - Avtalegiro med eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;3207 35 95222;FLYT AS;;-202.64;NOK;Bokført;FLYT AS
+30.06.2026;30.06.2026;30.06.2026;GJENSIDIGE FORSIKRING ASA (60050608460);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6005 06 08460;GJENSIDIGE FORSIKRING ASA;;-1285;NOK;Bokført;GJENSIDIGE FORSIKRING ASA
+25.06.2026;25.06.2026;25.06.2026;Statens Lånekas (76940520300);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;7694 05 20300;Statens Lånekas;;-2076;NOK;Bokført;Terminbeløp jun. 2026
+25.06.2026;25.06.2026;25.06.2026;Overføring til Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07565;Brukskonto fordel ung;9051 16 07557;Sparekonto fordel;;-70000;NOK;Bokført;Til: 9051.16.07557 Betalt: 25.06.26
+25.06.2026;25.06.2026;25.06.2026;Brilliant AS;Betaling innland;Overføring fra annen konto;4212 14 52191;Brilliant AS;9051 16 07565;Kristian Kjerstad;84325.86;;NOK;Bokført;Fra: Brilliant AS Betalt: 25.06.26
+24.06.2026;24.06.2026;24.06.2026;GJENSIDIGE FORSIKRING ASA (60050608460);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6005 06 08460;GJENSIDIGE FORSIKRING ASA;;-75;NOK;Bokført;GJENSIDIGE FORSIKRING ASA
+24.06.2026;24.06.2026;24.06.2026;Aneo Mobility AS (60750633717);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6075 06 33717;Aneo Mobility AS;;-342.49;NOK;Bokført;Til: Aneo Mobility AS Betalt: 24.06.26
+23.06.2026;23.06.2026;23.06.2026;Andrea Galåen (42801411430);immediate;Straksbetaling;9051 16 07565;Kristian Kjerstad;4280 14 11430;Andrea Galåen;;-418;NOK;Bokført;Til: Andrea Galåen
+22.06.2026;22.06.2026;22.06.2026;3T PRODUKTER AS (86016895069);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;8601 68 95069;3T PRODUKTER AS;;-629;NOK;Bokført;3T 401088802
+19.06.2026;19.06.2026;19.06.2026;BOLIGSAM. HARALD HÅRFAGRESGT.2 (42000715101);Betaling innland;Utgående betaling med melding;9051 16 07565;Brukskonto fordel ung;4200 07 15101;BOLIGSAM. HARALD HÅRFAGRESGT.2;;-3219;NOK;Bokført;"Til: BOLIGSAM. HARALD HÅRFAGRESGT.2 Betalt: 19.06.26
+kristian kjerstad"
+19.06.2026;19.06.2026;19.06.2026;SEB KORT AB, OSLOFIL.NUF (97500703559);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;9750 07 03559;SEB KORT AB, OSLOFIL.NUF;;-21149.77;NOK;Bokført;Til: SEB KORT AB, OSLOFIL.NUF Betalt: 19.06.26
+19.06.2026;19.06.2026;19.06.2026;Overføring fra Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07557;Sparekonto fordel;9051 16 07565;Brukskonto fordel ung;2500;;NOK;Bokført;Fra: Kristian Kjerstad Betalt: 19.06.26
+19.06.2026;19.06.2026;19.06.2026;VIBB AS (15063103818);Betaling innland - Avtalegiro med eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;1506 31 03818;VIBB AS;;-1047.96;NOK;Bokført;Vibb AS
+18.06.2026;18.06.2026;18.06.2026;Kristian Tobias Randa;immediate;Straksbetaling;4214 51 53381;;9051 16 07565;Kristian Kjerstad;1200;;NOK;Bokført;"Fra: Kristian Tobias Randa Betalt: 18.06.26
+Vipps"
+15.06.2026;15.06.2026;15.06.2026;Til konto: 9051 74 50544;Betaling innland;Nedbetaling av lån;9051 16 07565;Brukskonto fordel ung;9051 74 50544;;;-13535;NOK;Bokført;"Til:90517450544
+     Terminomkostninger: kr            50,00
+     Avdrag:             kr         4.474,00
+     Renter:             kr         9.011,00"
+15.06.2026;15.06.2026;15.06.2026;Trondheim Kommune (42131958034);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;4213 19 58034;Trondheim Kommune;;-972;NOK;Bokført;Til: Trondheim Kommune Betalt: 15.06.26
+12.06.2026;12.06.2026;12.06.2026;Overføring fra Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07557;Sparekonto fordel;9051 16 07565;Brukskonto fordel ung;30000;;NOK;Bokført;Fra: Kristian Kjerstad Betalt: 12.06.26
+10.06.2026;10.06.2026;10.06.2026;TELENOR NORGE AS TV/BREDBÅND (60050777130);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6005 07 77130;TELENOR NORGE AS TV/BREDBÅND;;-45.53;NOK;Bokført;Til: TELENOR NORGE AS TV/BREDBÅND Betalt: 10.06.26
+10.06.2026;10.06.2026;10.06.2026;Lønn fra TEKNA-TEKNISK-NAT. FORENING;Lønn;Lønn;1503 71 57829;;9051 16 07565;Kristian Kjerstad;1206.7;;NOK;Bokført;Fra: TEKNA-TEKNISK-NAT. FORENING
+10.06.2026;10.06.2026;10.06.2026;Kristian Tobias Randa (42145153381);immediate;Straksbetaling;9051 16 07565;Kristian Kjerstad;4214 51 53381;Kristian Tobias Randa;;-500;NOK;Bokført;Til: Kristian Tobias Randa
+08.06.2026;08.06.2026;08.06.2026;Kristian brukskonto dnb (12072209913);Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;1207 22 09913;Kristian brukskonto dnb;;-3000;NOK;Bokført;"Til: 1207.22.09913 Betalt: 08.06.26
+overføring for aksjefond"
+05.06.2026;05.06.2026;05.06.2026;Brilliant AS;Betaling innland;Overføring fra annen konto;4212 14 52191;Brilliant AS;9051 16 07565;Kristian Kjerstad;2350.8;;NOK;Bokført;Fra: Brilliant AS Betalt: 05.06.26
+05.06.2026;05.06.2026;05.06.2026;Til konto: 9051 16 07557;Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;9051 16 07557;;;-4000;NOK;Bokført;overføring sparekonto
+01.06.2026;01.06.2026;31.05.2026;Siri Terese Farstad (92351949440);immediate;Straksbetaling;9051 16 07565;Kristian Kjerstad;9235 19 49440;Siri Terese Farstad;;-60;NOK;Bokført;Til: Siri Terese Farstad
+01.06.2026;01.06.2026;01.06.2026;Hans Andreas Hestad Skiri;immediate;Straksbetaling;1203 70 36763;;9051 16 07565;Kristian Kjerstad;2000;;NOK;Bokført;"Fra: Hans Andreas Hestad Skiri Betalt: 01.06.26
+Takk for hjelpen"
+01.06.2026;01.06.2026;30.05.2026;Kristin Strømmen (12294100278);immediate;Straksbetaling;9051 16 07565;Kristian Kjerstad;1229 41 00278;Kristin Strømmen;;-255;NOK;Bokført;Til: Kristin Strømmen
+01.06.2026;01.06.2026;01.06.2026;GJENSIDIGE FORSIKRING ASA (60050608460);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6005 06 08460;GJENSIDIGE FORSIKRING ASA;;-1272;NOK;Bokført;GJENSIDIGE FORSIKRING ASA
+27.05.2026;27.05.2026;26.05.2026;Overføring;Overføring;Kreditoverføring;;;9051 16 07565;Brukskonto fordel ung;445;;NOK;Bokført;*2567 26.05 NOK 445.00 Vipps*Martin Stenmann Kurs: 1.0000
+26.05.2026;26.05.2026;23.05.2026;Kristian Tobias Randa;immediate;Straksbetaling;4214 51 53381;;9051 16 07565;Kristian Kjerstad;60;;NOK;Bokført;"Fra: Kristian Tobias Randa Betalt: 23.05.26
+Vipps"
+26.05.2026;26.05.2026;26.05.2026;Statens Lånekas (76940520300);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;7694 05 20300;Statens Lånekas;;-2077;NOK;Bokført;Terminbeløp mai. 2026
+26.05.2026;26.05.2026;26.05.2026;GJENSIDIGE FORSIKRING ASA (60050608460);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6005 06 08460;GJENSIDIGE FORSIKRING ASA;;-75;NOK;Bokført;GJENSIDIGE FORSIKRING ASA
+22.05.2026;22.05.2026;22.05.2026;Overføring til Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07565;Brukskonto fordel ung;9051 16 07557;Sparekonto fordel;;-30000;NOK;Bokført;Til: 9051.16.07557 Betalt: 22.05.26
+22.05.2026;22.05.2026;22.05.2026;Kristian Kjerstad;Betaling innland;Overføring fra annen konto;1207 22 09913;Kristian Kjerstad;9051 16 07565;Kristian Kjerstad;719.35;;NOK;Bokført;"Fra: Kristian Kjerstad Betalt: 22.05.26
+Gjensidige utbytte"
+22.05.2026;22.05.2026;22.05.2026;Brilliant AS;Betaling innland;Overføring fra annen konto;4212 14 52191;Brilliant AS;9051 16 07565;Kristian Kjerstad;48315.32;;NOK;Bokført;Fra: Brilliant AS Betalt: 22.05.26
+22.05.2026;22.05.2026;22.05.2026;BOLIGSAM. HARALD HÅRFAGRESGT.2 (42000715101);Betaling innland;Utgående betaling med melding;9051 16 07565;Brukskonto fordel ung;4200 07 15101;BOLIGSAM. HARALD HÅRFAGRESGT.2;;-3219;NOK;Bokført;"Til: BOLIGSAM. HARALD HÅRFAGRESGT.2 Betalt: 22.05.26
+Kristian Kjerstad"
+20.05.2026;20.05.2026;20.05.2026;SEB KORT AB, OSLOFIL.NUF (97500703559);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;9750 07 03559;SEB KORT AB, OSLOFIL.NUF;;-26020.31;NOK;Bokført;Til: SEB KORT AB, OSLOFIL.NUF Betalt: 20.05.26
+20.05.2026;20.05.2026;20.05.2026;3T PRODUKTER AS (86016895069);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;8601 68 95069;3T PRODUKTER AS;;-629;NOK;Bokført;3T 401046222
+19.05.2026;19.05.2026;19.05.2026;Vibb AS (15063103818);Betaling innland - Avtalegiro med eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;1506 31 03818;Vibb AS;;-1092.3;NOK;Bokført;Vibb AS
+19.05.2026;19.05.2026;19.05.2026;Overføring fra Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07557;Sparekonto fordel;9051 16 07565;Brukskonto fordel ung;3000;;NOK;Bokført;Fra: Kristian Kjerstad Betalt: 19.05.26
+19.05.2026;19.05.2026;19.05.2026;Aneo Mobility AS (60750633717);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6075 06 33717;Aneo Mobility AS;;-429.48;NOK;Bokført;Til: Aneo Mobility AS Betalt: 19.05.26
+15.05.2026;15.05.2026;15.05.2026;Til konto: 9051 74 50544;Betaling innland;Nedbetaling av lån;9051 16 07565;Brukskonto fordel ung;9051 74 50544;;;-13535;NOK;Bokført;"Til:90517450544
+     Avdrag:             kr         4.745,00
+     Renter:             kr         8.740,00
+     Terminomkostninger: kr            50,00"
+15.05.2026;15.05.2026;15.05.2026;Trondheim Kommune (42131958034);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;4213 19 58034;Trondheim Kommune;;-972;NOK;Bokført;Til: Trondheim Kommune Betalt: 15.05.26
+15.05.2026;15.05.2026;14.05.2026;Overføring fra Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07557;Sparekonto fordel;9051 16 07565;Brukskonto fordel ung;29000;;NOK;Bokført;Fra: Kristian Kjerstad Betalt: 14.05.26
+13.05.2026;13.05.2026;13.05.2026;Kristian Tobias Randa;immediate;Straksbetaling;4214 51 53381;;9051 16 07565;Kristian Kjerstad;1199;;NOK;Bokført;"Fra: Kristian Tobias Randa Betalt: 13.05.26
+Vipps"
+07.05.2026;07.05.2026;07.05.2026;Kristian brukskonto dnb (12072209913);Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;1207 22 09913;Kristian brukskonto dnb;;-3000;NOK;Bokført;"Til: 1207.22.09913 Betalt: 07.05.26
+overføring for aksjefond"
+05.05.2026;05.05.2026;05.05.2026;Til konto: 9051 16 07557;Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;9051 16 07557;;;-4000;NOK;Bokført;overføring sparekonto
+05.05.2026;05.05.2026;05.05.2026;FLYT AS (32073595222);Betaling innland - Avtalegiro med eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;3207 35 95222;FLYT AS;;-488.68;NOK;Bokført;FLYT AS
+04.05.2026;04.05.2026;02.05.2026;Hans Andreas Hestad Skiri;immediate;Straksbetaling;1203 70 36763;;9051 16 07565;Kristian Kjerstad;100;;NOK;Bokført;Fra: Hans Andreas Hestad Skiri Betalt: 02.05.26
+04.05.2026;04.05.2026;02.05.2026;Hans Andreas Hestad Skiri;immediate;Straksbetaling;1203 70 36763;;9051 16 07565;Kristian Kjerstad;444;;NOK;Bokført;Fra: Hans Andreas Hestad Skiri Betalt: 02.05.26
+04.05.2026;04.05.2026;04.05.2026;Brilliant AS;Betaling innland;Overføring fra annen konto;4212 14 52191;Brilliant AS;9051 16 07565;Kristian Kjerstad;836;;NOK;Bokført;Fra: Brilliant AS Betalt: 04.05.26
+04.05.2026;04.05.2026;02.05.2026;Kristian Tobias Randa;immediate;Straksbetaling;4214 51 53381;;9051 16 07565;Kristian Kjerstad;279;;NOK;Bokført;"Fra: Kristian Tobias Randa Betalt: 02.05.26
+Vipps"
+04.05.2026;04.05.2026;02.05.2026;Andreas Kjerstad;immediate;Straksbetaling;1203 64 42083;;9051 16 07565;Kristian Kjerstad;450;;NOK;Bokført;"Fra: Andreas Kjerstad Betalt: 02.05.26
+Shylling"
+30.04.2026;30.04.2026;30.04.2026;GJENSIDIGE FORSIKRING ASA (60050608460);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6005 06 08460;GJENSIDIGE FORSIKRING ASA;;-1272;NOK;Bokført;GJENSIDIGE FORSIKRING ASA
+30.04.2026;30.04.2026;30.04.2026;Overføring til Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07565;Brukskonto fordel ung;9051 16 07557;Sparekonto fordel;;-10000;NOK;Bokført;Til: 9051.16.07557 Betalt: 30.04.26
+29.04.2026;29.04.2026;29.04.2026;Kristian Tobias Randa;immediate;Straksbetaling;4214 51 53381;;9051 16 07565;Kristian Kjerstad;130;;NOK;Bokført;"Fra: Kristian Tobias Randa Betalt: 29.04.26
+Vipps"
+29.04.2026;29.04.2026;29.04.2026;Kristian Tobias Randa;immediate;Straksbetaling;4214 51 53381;;9051 16 07565;Kristian Kjerstad;90;;NOK;Bokført;"Fra: Kristian Tobias Randa Betalt: 29.04.26
+Vipps"
+28.04.2026;28.04.2026;27.04.2026;Jorge Leopoldo Vera Rodriguez;immediate;Straksbetaling;4214 36 54243;;9051 16 07565;Kristian Kjerstad;300;;NOK;Bokført;"Fra: Jorge Leopoldo Vera Rodriguez Betalt: 27.04.26
+Vipps"
+28.04.2026;28.04.2026;28.04.2026;Overføring til Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07565;Brukskonto fordel ung;9051 16 07557;Sparekonto fordel;;-29000;NOK;Bokført;Til: 9051.16.07557 Betalt: 28.04.26
+28.04.2026;28.04.2026;27.04.2026;Santiprap Pakpoom;immediate;Straksbetaling;3132 24 20377;;9051 16 07565;Kristian Kjerstad;300;;NOK;Bokført;"Fra: Santiprap Pakpoom Betalt: 27.04.26
+Aktiviteter på Arena Trondheim"
+28.04.2026;28.04.2026;27.04.2026;Hans Andreas Hestad Skiri;immediate;Straksbetaling;1203 70 36763;;9051 16 07565;Kristian Kjerstad;300;;NOK;Bokført;"Fra: Hans Andreas Hestad Skiri Betalt: 27.04.26
+Aktiviteter på Arena Trondheim"
+28.04.2026;28.04.2026;27.04.2026;Overføring;Overføring;Kreditoverføring;;;9051 16 07565;Brukskonto fordel ung;900;;NOK;Bokført;*2567 27.04 NOK 900.00 Vipps*Alexander Michae Kurs: 1.0000
+27.04.2026;27.04.2026;27.04.2026;Statens Lånekas (76940520300);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;7694 05 20300;Statens Lånekas;;-2077;NOK;Bokført;Terminbeløp apr. 2026
+24.04.2026;24.04.2026;24.04.2026;Brilliant AS;Betaling innland;Overføring fra annen konto;4212 14 52191;Brilliant AS;9051 16 07565;Kristian Kjerstad;48315.32;;NOK;Bokført;Fra: Brilliant AS Betalt: 24.04.26
+24.04.2026;24.04.2026;24.04.2026;GJENSIDIGE FORSIKRING ASA (60050608460);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6005 06 08460;GJENSIDIGE FORSIKRING ASA;;-75;NOK;Bokført;GJENSIDIGE FORSIKRING ASA
+21.04.2026;21.04.2026;21.04.2026;Aneo Mobility AS (60750633717);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6075 06 33717;Aneo Mobility AS;;-461.58;NOK;Bokført;Til: Aneo Mobility AS Betalt: 21.04.26
+21.04.2026;21.04.2026;21.04.2026;Vibb AS (15063103818);Betaling innland - Avtalegiro med eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;1506 31 03818;Vibb AS;;-1155.63;NOK;Bokført;Vibb AS
+20.04.2026;20.04.2026;20.04.2026;Overføring til Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07565;Brukskonto fordel ung;9051 16 07557;Sparekonto fordel;;-15000;NOK;Bokført;Bursdag gave
+20.04.2026;20.04.2026;20.04.2026;BOLIGSAM. HARALD HÅRFAGRESGT.2 (42000715101);Betaling innland;Utgående betaling med melding;9051 16 07565;Brukskonto fordel ung;4200 07 15101;BOLIGSAM. HARALD HÅRFAGRESGT.2;;-3219;NOK;Bokført;"Til: BOLIGSAM. HARALD HÅRFAGRESGT.2 Betalt: 20.04.26
+Kristian Kjerstad"
+20.04.2026;20.04.2026;20.04.2026;Kristian Kjerstad;Betaling innland;Overføring fra annen konto;1207 22 09913;Kristian Kjerstad;9051 16 07565;Kristian Kjerstad;15000;;NOK;Bokført;"Fra: Kristian Kjerstad Betalt: 20.04.26
+Bursdagsgave!"
+20.04.2026;20.04.2026;20.04.2026;SEB KORT AB, OSLOFIL.NUF (97500703559);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;9750 07 03559;SEB KORT AB, OSLOFIL.NUF;;-9149.2;NOK;Bokført;Til: SEB KORT AB, OSLOFIL.NUF Betalt: 20.04.26
+20.04.2026;20.04.2026;20.04.2026;3T PRODUKTER AS (86016895069);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;8601 68 95069;3T PRODUKTER AS;;-629;NOK;Bokført;3T 401002432
+20.04.2026;20.04.2026;18.04.2026;Kristian Tobias Randa;immediate;Straksbetaling;4214 51 53381;;9051 16 07565;Kristian Kjerstad;126;;NOK;Bokført;"Fra: Kristian Tobias Randa Betalt: 18.04.26
+Vipps"
+17.04.2026;17.04.2026;17.04.2026;Kristian Tobias Randa;immediate;Straksbetaling;4214 51 53381;;9051 16 07565;Kristian Kjerstad;100;;NOK;Bokført;"Fra: Kristian Tobias Randa Betalt: 17.04.26
+Vipps"
+16.04.2026;16.04.2026;16.04.2026;Brilliant AS;Betaling innland;Overføring fra annen konto;4212 14 52191;Brilliant AS;9051 16 07565;Kristian Kjerstad;836;;NOK;Bokført;Fra: Brilliant AS Betalt: 16.04.26
+15.04.2026;15.04.2026;15.04.2026;Til konto: 9051 74 50544;Betaling innland;Nedbetaling av lån;9051 16 07565;Brukskonto fordel ung;9051 74 50544;;;-13535;NOK;Bokført;"Til:90517450544
+     Avdrag:             kr         4.437,00
+     Renter:             kr         9.048,00
+     Terminomkostninger: kr            50,00"
+15.04.2026;15.04.2026;15.04.2026;Trondheim Kommune (42131958034);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;4213 19 58034;Trondheim Kommune;;-1737;NOK;Bokført;Til: Trondheim Kommune Betalt: 15.04.26
+14.04.2026;14.04.2026;14.04.2026;Overføring fra Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07557;Sparekonto fordel;9051 16 07565;Brukskonto fordel ung;20000;;NOK;Bokført;Fra: Kristian Kjerstad Betalt: 14.04.26
+14.04.2026;14.04.2026;14.04.2026;Andrea Galåen (42801411430);immediate;Straksbetaling;9051 16 07565;Kristian Kjerstad;4280 14 11430;Andrea Galåen;;-442.5;NOK;Bokført;Til: Andrea Galåen
+13.04.2026;13.04.2026;13.04.2026;Andrea Galåen (42801411430);immediate;Straksbetaling;9051 16 07565;Kristian Kjerstad;4280 14 11430;Andrea Galåen;;-250;NOK;Bokført;Til: Andrea Galåen
+07.04.2026;07.04.2026;07.04.2026;Kristian brukskonto dnb (12072209913);Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;1207 22 09913;Kristian brukskonto dnb;;-3000;NOK;Bokført;"Til: 1207.22.09913 Betalt: 07.04.26
+overføring for aksjefond"
+07.04.2026;07.04.2026;07.04.2026;Til konto: 9051 16 07557;Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;9051 16 07557;;;-4000;NOK;Bokført;overføring sparekonto
+30.03.2026;30.03.2026;30.03.2026;GJENSIDIGE FORSIKRING ASA (60050608460);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6005 06 08460;GJENSIDIGE FORSIKRING ASA;;-1272;NOK;Bokført;GJENSIDIGE FORSIKRING ASA
+27.03.2026;27.03.2026;27.03.2026;FLYT AS (32073595222);Betaling innland - Avtalegiro med eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;3207 35 95222;FLYT AS;;-275.48;NOK;Bokført;FLYT AS
+26.03.2026;26.03.2026;26.03.2026;Kristian Kjerstad;Betaling innland;Overføring fra annen konto;1207 22 09913;Kristian Kjerstad;9051 16 07565;Kristian Kjerstad;192;;NOK;Bokført;"Fra: Kristian Kjerstad Betalt: 25.03.26
+."
+25.03.2026;25.03.2026;25.03.2026;Skatteetaten - Skatteinnkrevin;Betaling innland;Overføring fra annen konto;7694 05 24802;Skatteetaten - Skatteinnkrevin;9051 16 07565;Kristian Kjerstad;2583;;NOK;Bokført;Skatt
+25.03.2026;25.03.2026;25.03.2026;Brilliant AS;Betaling innland;Overføring fra annen konto;4212 14 52191;Brilliant AS;9051 16 07565;Kristian Kjerstad;48365.32;;NOK;Bokført;Fra: Brilliant AS Betalt: 25.03.26
+25.03.2026;25.03.2026;25.03.2026;Statens Lånekas (76940520300);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;7694 05 20300;Statens Lånekas;;-2079;NOK;Bokført;Terminbeløp mar. 2026
+25.03.2026;25.03.2026;25.03.2026;Overføring til Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07565;Brukskonto fordel ung;9051 16 07557;Sparekonto fordel;;-30000;NOK;Bokført;Til: 9051.16.07557 Betalt: 25.03.26
+24.03.2026;24.03.2026;24.03.2026;GJENSIDIGE FORSIKRING ASA (60050608460);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6005 06 08460;GJENSIDIGE FORSIKRING ASA;;-75;NOK;Bokført;GJENSIDIGE FORSIKRING ASA
+23.03.2026;23.03.2026;20.03.2026;Santiprap Pakpoom;immediate;Straksbetaling;3132 24 20377;;9051 16 07565;Kristian Kjerstad;120;;NOK;Bokført;"Fra: Santiprap Pakpoom Betalt: 20.03.26
+Sjøtttttt"
+23.03.2026;23.03.2026;23.03.2026;Overføring fra Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07557;Sparekonto fordel;9051 16 07565;Brukskonto fordel ung;2000;;NOK;Bokført;Fra: Kristian Kjerstad Betalt: 23.03.26
+23.03.2026;23.03.2026;22.03.2026;Kamil Hubert Poplawski (42121892426);immediate;Straksbetaling;9051 16 07565;Kristian Kjerstad;4212 18 92426;Kamil Hubert Poplawski;;-185;NOK;Bokført;Til: Kamil Hubert Poplawski
+20.03.2026;20.03.2026;20.03.2026;BOLIGSAM. HARALD HÅRFAGRESGT.2 (42000715101);Betaling innland;Utgående betaling med melding;9051 16 07565;Brukskonto fordel ung;4200 07 15101;BOLIGSAM. HARALD HÅRFAGRESGT.2;;-3219;NOK;Bokført;"Til: BOLIGSAM. HARALD HÅRFAGRESGT.2 Betalt: 20.03.26
+Kristian Kjerstad"
+20.03.2026;20.03.2026;20.03.2026;SEB KORT AB, OSLOFIL.NUF (97500703559);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;9750 07 03559;SEB KORT AB, OSLOFIL.NUF;;-20791.28;NOK;Bokført;Til: SEB KORT AB, OSLOFIL.NUF Betalt: 20.03.26
+20.03.2026;20.03.2026;20.03.2026;3T PRODUKTER AS (86016895069);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;8601 68 95069;3T PRODUKTER AS;;-629;NOK;Bokført;3T 400958077
+19.03.2026;19.03.2026;19.03.2026;Aneo Mobility AS (60750633717);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6075 06 33717;Aneo Mobility AS;;-572.38;NOK;Bokført;Til: Aneo Mobility AS Betalt: 19.03.26
+18.03.2026;18.03.2026;18.03.2026;Vibb AS (15063103818);Betaling innland - Avtalegiro med eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;1506 31 03818;Vibb AS;;-1954.86;NOK;Bokført;Vibb AS
+16.03.2026;16.03.2026;16.03.2026;Brilliant AS;Betaling innland;Overføring fra annen konto;4212 14 52191;Brilliant AS;9051 16 07565;Kristian Kjerstad;4014;;NOK;Bokført;Fra: Brilliant AS Betalt: 16.03.26
+16.03.2026;16.03.2026;15.03.2026;Til konto: 9051 74 50544;Betaling innland;Nedbetaling av lån;9051 16 07565;Brukskonto fordel ung;9051 74 50544;;;-13535;NOK;Bokført;"Til:90517450544
+     Terminomkostninger: kr            50,00
+     Avdrag:             kr         5.292,00
+     Renter:             kr         8.193,00"
+16.03.2026;16.03.2026;16.03.2026;Trondheim Kommune (42131958034);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;4213 19 58034;Trondheim Kommune;;-459;NOK;Bokført;Til: Trondheim Kommune Betalt: 15.03.26
+12.03.2026;12.03.2026;12.03.2026;Overføring fra Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07557;Sparekonto fordel;9051 16 07565;Brukskonto fordel ung;29000;;NOK;Bokført;Fra: Kristian Kjerstad Betalt: 12.03.26
+11.03.2026;11.03.2026;11.03.2026;Kristian Tobias Randa;immediate;Straksbetaling;4930 15 70227;;9051 16 07565;Kristian Kjerstad;250;;NOK;Bokført;"Fra: Kristian Tobias Randa Betalt: 11.03.26
+Vipps"
+09.03.2026;09.03.2026;08.03.2026;Rune Melbye Johansen;immediate;Straksbetaling;3610 68 00949;;9051 16 07565;Kristian Kjerstad;150;;NOK;Bokført;Fra: Rune Melbye Johansen Betalt: 08.03.26
+09.03.2026;09.03.2026;08.03.2026;Andrea Galåen;immediate;Straksbetaling;4280 14 11430;;9051 16 07565;Kristian Kjerstad;70;;NOK;Bokført;Fra: Andrea Galåen Betalt: 08.03.26
+09.03.2026;09.03.2026;09.03.2026;Kristian brukskonto dnb (12072209913);Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;1207 22 09913;Kristian brukskonto dnb;;-3000;NOK;Bokført;"Til: 1207.22.09913 Betalt: 09.03.26
+overføring for aksjefond"
+05.03.2026;05.03.2026;05.03.2026;Til konto: 9051 16 07557;Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;9051 16 07557;;;-4000;NOK;Bokført;overføring sparekonto
+02.03.2026;02.03.2026;02.03.2026;GJENSIDIGE FORSIKRING ASA (60050608460);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6005 06 08460;GJENSIDIGE FORSIKRING ASA;;-1272;NOK;Bokført;GJENSIDIGE FORSIKRING ASA
+02.03.2026;02.03.2026;28.02.2026;Elisabeth Flåskjer Kjerstad;immediate;Straksbetaling;3900 13 44270;;9051 16 07565;Kristian Kjerstad;300;;NOK;Bokført;Fra: Elisabeth Flåskjer Kjerstad Betalt: 28.02.26
+02.03.2026;02.03.2026;01.03.2026;Snorre Ursin Persen;immediate;Straksbetaling;6634 07 02922;;9051 16 07565;Kristian Kjerstad;500;;NOK;Bokført;"Fra: Snorre Ursin Persen Betalt: 01.03.26
+2 par ski"
+26.02.2026;26.02.2026;26.02.2026;Ketil Wedø Skarpnes Karijord;immediate;Straksbetaling;4200 16 93683;;9051 16 07565;Kristian Kjerstad;150;;NOK;Bokført;"Fra: Ketil Wedø Skarpnes Karijord Betalt: 26.02.26
+Vipps"
+25.02.2026;25.02.2026;25.02.2026;Brilliant AS;Betaling innland;Overføring fra annen konto;4212 14 52191;Brilliant AS;9051 16 07565;Kristian Kjerstad;48365.32;;NOK;Bokført;Fra: Brilliant AS Betalt: 25.02.26
+25.02.2026;25.02.2026;25.02.2026;Statens Lånekas (76940520300);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;7694 05 20300;Statens Lånekas;;-2079;NOK;Bokført;Terminbeløp feb. 2026
+25.02.2026;25.02.2026;25.02.2026;Overføring til Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07565;Brukskonto fordel ung;9051 16 07557;Sparekonto fordel;;-49000;NOK;Bokført;Til: 9051.16.07557 Betalt: 25.02.26
+24.02.2026;24.02.2026;24.02.2026;GJENSIDIGE FORSIKRING ASA (60050608460);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6005 06 08460;GJENSIDIGE FORSIKRING ASA;;-75;NOK;Bokført;GJENSIDIGE FORSIKRING ASA
+23.02.2026;23.02.2026;21.02.2026;Marius Selnæs Andersen (12072875344);immediate;Straksbetaling;9051 16 07565;Kristian Kjerstad;1207 28 75344;Marius Selnæs Andersen;;-225;NOK;Bokført;Til: Marius Selnæs Andersen
+23.02.2026;23.02.2026;23.02.2026;Vibb AS (15063103818);Betaling innland - Avtalegiro med eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;1506 31 03818;Vibb AS;;-2295.13;NOK;Bokført;Vibb AS
+23.02.2026;23.02.2026;23.02.2026;FLYT AS (32073595222);Betaling innland - Avtalegiro med eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;3207 35 95222;FLYT AS;;-283.88;NOK;Bokført;FLYT AS
+23.02.2026;23.02.2026;22.02.2026;Peter Remøy Paulsen;immediate;Straksbetaling;6566 11 00545;;9051 16 07565;Kristian Kjerstad;500;;NOK;Bokført;"Fra: Peter Remøy Paulsen Betalt: 22.02.26
+Pendix"
+23.02.2026;23.02.2026;23.02.2026;Andrea Galåen;immediate;Straksbetaling;4280 14 11430;;9051 16 07565;Kristian Kjerstad;750;;NOK;Bokført;Fra: Andrea Galåen Betalt: 23.02.26
+20.02.2026;20.02.2026;20.02.2026;3T PRODUKTER AS (86016895069);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;8601 68 95069;3T PRODUKTER AS;;-629;NOK;Bokført;3T 400913740
+20.02.2026;20.02.2026;20.02.2026;BOLIGSAM. HARALD HÅRFAGRESGT.2 (42000715101);Betaling innland;Utgående betaling med melding;9051 16 07565;Brukskonto fordel ung;4200 07 15101;BOLIGSAM. HARALD HÅRFAGRESGT.2;;-3219;NOK;Bokført;"Til: BOLIGSAM. HARALD HÅRFAGRESGT.2 Betalt: 20.02.26
+Kristian Kjerstad"
+20.02.2026;20.02.2026;20.02.2026;SEB KORT AB, OSLOFIL.NUF (97500703559);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;9750 07 03559;SEB KORT AB, OSLOFIL.NUF;;-14388.8;NOK;Bokført;Til: SEB KORT AB, OSLOFIL.NUF Betalt: 20.02.26
+19.02.2026;19.02.2026;19.02.2026;Kristian Tobias Randa;immediate;Straksbetaling;4214 51 53381;;9051 16 07565;Kristian Kjerstad;3400;;NOK;Bokført;"Fra: Kristian Tobias Randa Betalt: 19.02.26
+Vipps"
+19.02.2026;19.02.2026;19.02.2026;Aneo Mobility AS (60750633717);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6075 06 33717;Aneo Mobility AS;;-635.34;NOK;Bokført;Til: Aneo Mobility AS Betalt: 19.02.26
+16.02.2026;16.02.2026;16.02.2026;Andrea Galåen;immediate;Straksbetaling;4280 14 11430;;9051 16 07565;Kristian Kjerstad;71.3;;NOK;Bokført;Fra: Andrea Galåen Betalt: 16.02.26
+16.02.2026;16.02.2026;15.02.2026;Til konto: 9051 74 50544;Betaling innland;Nedbetaling av lån;9051 16 07565;Brukskonto fordel ung;9051 74 50544;;;-13535;NOK;Bokført;"Til:90517450544
+     Terminomkostninger: kr            50,00
+     Avdrag:             kr         4.396,00
+     Renter:             kr         9.089,00"
+16.02.2026;16.02.2026;16.02.2026;Thomas Holene Løkkeborg;immediate;Straksbetaling;3910 47 99748;;9051 16 07565;Kristian Kjerstad;85.32;;NOK;Bokført;Fra: Thomas Holene Løkkeborg Betalt: 16.02.26
+16.02.2026;16.02.2026;16.02.2026;Trondheim Kommune (42131958034);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;4213 19 58034;Trondheim Kommune;;-459;NOK;Bokført;Til: Trondheim Kommune Betalt: 15.02.26
+13.02.2026;13.02.2026;13.02.2026;Overføring fra Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07557;Sparekonto fordel;9051 16 07565;Brukskonto fordel ung;30000;;NOK;Bokført;Fra: Kristian Kjerstad Betalt: 13.02.26
+11.02.2026;11.02.2026;11.02.2026;Lønn fra TEKNA-TEKNISK-NAT. FORENING;Lønn;Lønn;1503 71 57829;;9051 16 07565;Kristian Kjerstad;600;;NOK;Bokført;Fra: TEKNA-TEKNISK-NAT. FORENING
+09.02.2026;09.02.2026;09.02.2026;Frida Lyngstad Aune;Betaling innland;Innkommende betaling;4230 30 01241;Frida Lyngstad Aune;9051 16 07565;Kristian Kjerstad;2250;;NOK;Bokført;"Fra: Frida Lyngstad Aune Betalt: 08.02.26
+Klatring 25.01 og 01.02"
+09.02.2026;09.02.2026;08.02.2026;Kristian Tobias Randa;immediate;Straksbetaling;1228 64 67650;;9051 16 07565;Kristian Kjerstad;130;;NOK;Bokført;Fra: Kristian Tobias Randa Betalt: 08.02.26
+09.02.2026;09.02.2026;07.02.2026;Ole Kristian Røvik (64011301027);immediate;Straksbetaling;9051 16 07565;Kristian Kjerstad;6401 13 01027;Ole Kristian Røvik;;-97;NOK;Bokført;Til: Ole Kristian Røvik
+09.02.2026;09.02.2026;09.02.2026;Kristian brukskonto dnb (12072209913);Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;1207 22 09913;Kristian brukskonto dnb;;-3000;NOK;Bokført;"Til: 1207.22.09913 Betalt: 09.02.26
+overføring for aksjefond"
+09.02.2026;09.02.2026;07.02.2026;Alexander Michael Ås (95230865842);immediate;Straksbetaling;9051 16 07565;Kristian Kjerstad;9523 08 65842;Alexander Michael Ås;;-1953.7;NOK;Bokført;Til: Alexander Michael Ås
+06.02.2026;06.02.2026;06.02.2026;Kristian Tobias Randa (12286467650);immediate;Straksbetaling;9051 16 07565;Kristian Kjerstad;1228 64 67650;Kristian Tobias Randa;;-700;NOK;Bokført;Til: Kristian Tobias Randa
+05.02.2026;05.02.2026;05.02.2026;Til konto: 9051 16 07557;Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;9051 16 07557;;;-4000;NOK;Bokført;overføring sparekonto
+04.02.2026;04.02.2026;05.02.2026;Aera Payment & (18135911506);Betaling innland;Utgående betaling med melding;9051 16 07565;Brukskonto fordel ung;1813 59 11506;Aera Payment &;;-161;NOK;Bokført;2026-02-04 17.19.49, TrumfPay,
+03.02.2026;03.02.2026;03.02.2026;Brilliant AS;Betaling innland;Overføring fra annen konto;4212 14 52191;Brilliant AS;9051 16 07565;Kristian Kjerstad;1337;;NOK;Bokført;Fra: Brilliant AS Betalt: 03.02.26
+02.02.2026;02.02.2026;02.02.2026;TEKNA-TEKNISK NATURVIT.FOREN. (15037157829);Betaling innland - Avtalegiro med eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;1503 71 57829;TEKNA-TEKNISK NATURVIT.FOREN.;;-2680;NOK;Bokført;TEKNA-KONTINGENT
+31.01.2026;31.01.2026;30.01.2026;GJENSIDIGE FORSIKRING ASA (60050608460);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6005 06 08460;GJENSIDIGE FORSIKRING ASA;;-1272;NOK;Bokført;GJENSIDIGE FORSIKRING ASA
+28.01.2026;28.01.2026;28.01.2026;Alexander Michael Ås (95230865842);immediate;Straksbetaling;9051 16 07565;Kristian Kjerstad;9523 08 65842;Alexander Michael Ås;;-66;NOK;Bokført;Til: Alexander Michael Ås
+27.01.2026;27.01.2026;27.01.2026;Overføring til Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07565;Brukskonto fordel ung;9051 16 07557;Sparekonto fordel;;-30000;NOK;Bokført;Til: 9051.16.07557 Betalt: 27.01.26
+26.01.2026;26.01.2026;26.01.2026;Statens Lånekasse for Utdannin (76940520300);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;7694 05 20300;Statens Lånekasse for Utdannin;;-2089;NOK;Bokført;Til: Statens Lånekasse for Utdannin Betalt: 25.01.26
+26.01.2026;26.01.2026;26.01.2026;GJENSIDIGE FORSIKRING ASA (60050608460);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6005 06 08460;GJENSIDIGE FORSIKRING ASA;;-76;NOK;Bokført;GJENSIDIGE FORSIKRING ASA
+23.01.2026;23.01.2026;23.01.2026;Brilliant AS;Betaling innland;Overføring fra annen konto;4212 14 52191;Brilliant AS;9051 16 07565;Kristian Kjerstad;48365.32;;NOK;Bokført;Fra: Brilliant AS Betalt: 23.01.26
+22.01.2026;22.01.2026;22.01.2026;IMPULSE.NO;Varekjøp;Varekjøp debetkort;9051 16 07565;Kristian Kjerstad;;;;-299;NOK;Bokført;*2567 21.01 NOK 299.00 IMPULSE.NO Kurs: 1.0000
+22.01.2026;22.01.2026;22.01.2026;Coop Midt-Norge SA;Betaling innland;Overføring fra annen konto;1503 19 06072;Coop Midt-Norge SA;9051 16 07565;Kristian Kjerstad;123;;NOK;Bokført;Fra: Coop Midt-Norge SA Betalt: 22.01.26
+21.01.2026;21.01.2026;21.01.2026;Overføring til Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07565;Brukskonto fordel ung;9051 16 07557;Sparekonto fordel;;-8000;NOK;Bokført;Til: 9051.16.07557 Betalt: 21.01.26
+20.01.2026;20.01.2026;20.01.2026;MYWORKOUT24.NO (42851729709);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;4285 17 29709;MYWORKOUT24.NO;;-329;NOK;Bokført;Faktura 130862446
+20.01.2026;20.01.2026;20.01.2026;BOLIGSAM. HARALD HÅRFAGRESGT.2 (42000715101);Betaling innland;Utgående betaling med melding;9051 16 07565;Brukskonto fordel ung;4200 07 15101;BOLIGSAM. HARALD HÅRFAGRESGT.2;;-3219;NOK;Bokført;"Til: BOLIGSAM. HARALD HÅRFAGRESGT.2 Betalt: 20.01.26
+Kristian Kjerstad"
+20.01.2026;20.01.2026;20.01.2026;FLYT AS (32073595222);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;3207 35 95222;FLYT AS;;-492.82;NOK;Bokført;Til: FLYT AS Betalt: 20.01.26
+20.01.2026;20.01.2026;20.01.2026;SEB KORT AB, OSLOFIL.NUF (97500703559);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;9750 07 03559;SEB KORT AB, OSLOFIL.NUF;;-14453.05;NOK;Bokført;Til: SEB KORT AB, OSLOFIL.NUF Betalt: 20.01.26
+19.01.2026;19.01.2026;19.01.2026;Kristian Tobias Randa;immediate;Straksbetaling;4214 51 53381;;9051 16 07565;Kristian Kjerstad;140;;NOK;Bokført;"Fra: Kristian Tobias Randa Betalt: 19.01.26
+Vipps"
+19.01.2026;19.01.2026;19.01.2026;Aneo Mobility AS (60750633717);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6075 06 33717;Aneo Mobility AS;;-442.46;NOK;Bokført;Til: Aneo Mobility AS Betalt: 19.01.26
+19.01.2026;19.01.2026;19.01.2026;Kristian Tobias Randa (49301570227);immediate;Straksbetaling;9051 16 07565;Kristian Kjerstad;4930 15 70227;Kristian Tobias Randa;;-140;NOK;Bokført;Til: Kristian Tobias Randa
+19.01.2026;19.01.2026;19.01.2026;Vibb AS (15063103818);Betaling innland - Avtalegiro med eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;1506 31 03818;Vibb AS;;-1534.31;NOK;Bokført;Vibb AS
+15.01.2026;15.01.2026;15.01.2026;Trondheim Kommune (42131958034);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;4213 19 58034;Trondheim Kommune;;-957;NOK;Bokført;Til: Trondheim Kommune Betalt: 15.01.26
+15.01.2026;15.01.2026;15.01.2026;Til konto: 9051 74 50544;Betaling innland;Nedbetaling av lån;9051 16 07565;Brukskonto fordel ung;9051 74 50544;;;-13535;NOK;Bokført;"Til:90517450544
+     Terminomkostninger: kr            50,00
+     Avdrag:             kr         4.379,00
+     Renter:             kr         9.106,00"
+14.01.2026;14.01.2026;14.01.2026;Overføring fra Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07557;Sparekonto fordel;9051 16 07565;Brukskonto fordel ung;18000;;NOK;Bokført;Fra: Kristian Kjerstad Betalt: 14.01.26
+14.01.2026;14.01.2026;14.01.2026;Brilliant AS;Betaling innland;Overføring fra annen konto;4212 14 52191;Brilliant AS;9051 16 07565;Kristian Kjerstad;402;;NOK;Bokført;Fra: Brilliant AS Betalt: 14.01.26
+14.01.2026;14.01.2026;14.01.2026;Overføring fra Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07557;Sparekonto fordel;9051 16 07565;Brukskonto fordel ung;25000;;NOK;Bokført;Fra: Kristian Kjerstad Betalt: 14.01.26
+07.01.2026;07.01.2026;07.01.2026;Kristian brukskonto dnb (12072209913);Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;1207 22 09913;Kristian brukskonto dnb;;-3000;NOK;Bokført;"Til: 1207.22.09913 Betalt: 07.01.26
+overføring for aksjefond"
+06.01.2026;06.01.2026;06.01.2026;Andres Felipe Terreros Romero (66311056183);immediate;Straksbetaling;9051 16 07565;Kristian Kjerstad;6631 10 56183;Andres Felipe Terreros Romero;;-695;NOK;Bokført;Til: Andres Felipe Terreros Romero
+05.01.2026;05.01.2026;05.01.2026;Til konto: 9051 16 07557;Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;9051 16 07557;;;-4000;NOK;Bokført;overføring sparekonto
+31.12.2025;31.12.2025;01.01.2026;Renter;Renter;Renter;;;9051 16 07565;Kristian Kjerstad;75;;NOK;Bokført;KREDITRENTER
+30.12.2025;30.12.2025;30.12.2025;GJENSIDIGE FORSIKRING ASA (60050608460);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6005 06 08460;GJENSIDIGE FORSIKRING ASA;;-1272;NOK;Bokført;GJENSIDIGE FORSIKRING ASA
+30.12.2025;30.12.2025;30.12.2025;Odd Atle Kjerstad;immediate;Straksbetaling;3900 11 18203;;9051 16 07565;Kristian Kjerstad;600;;NOK;Bokført;Fra: Odd Atle Kjerstad Betalt: 30.12.25
+29.12.2025;29.12.2025;24.12.2025;Elisabeth Flåskjer Kjerstad;immediate;Straksbetaling;3900 13 44270;;9051 16 07565;Kristian Kjerstad;3000;;NOK;Bokført;Fra: Elisabeth Flåskjer Kjerstad Betalt: 24.12.25
+29.12.2025;29.12.2025;24.12.2025;Elisabeth Flåskjer Kjerstad;immediate;Straksbetaling;3900 13 44270;;9051 16 07565;Kristian Kjerstad;500;;NOK;Bokført;Fra: Elisabeth Flåskjer Kjerstad Betalt: 24.12.25
+29.12.2025;29.12.2025;29.12.2025;GJENSIDIGE FORSIKRING ASA (60050608460);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6005 06 08460;GJENSIDIGE FORSIKRING ASA;;-73;NOK;Bokført;GJENSIDIGE FORSIKRING ASA
+29.12.2025;29.12.2025;24.12.2025;Overføring til Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07565;Brukskonto fordel ung;9051 16 07557;Sparekonto fordel;;-18000;NOK;Bokført;Til: 9051.16.07557 Betalt: 24.12.25
+29.12.2025;29.12.2025;24.12.2025;Overføring til Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07565;Brukskonto fordel ung;9051 16 07557;Sparekonto fordel;;-25000;NOK;Bokført;Til: 9051.16.07557 Betalt: 24.12.25
+29.12.2025;29.12.2025;29.12.2025;Statens Lånekasse for Utdannin (76940520300);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;7694 05 20300;Statens Lånekasse for Utdannin;;-2089;NOK;Bokført;Til: Statens Lånekasse for Utdannin Betalt: 25.12.25
+23.12.2025;23.12.2025;23.12.2025;Brilliant AS;Betaling innland;Overføring fra annen konto;4212 14 52191;Brilliant AS;9051 16 07565;Kristian Kjerstad;49620.29;;NOK;Bokført;Fra: Brilliant AS Betalt: 23.12.25
+22.12.2025;22.12.2025;22.12.2025;MYWORKOUT24.NO (42851729709);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;4285 17 29709;MYWORKOUT24.NO;;-329;NOK;Bokført;Faktura 130854892
+19.12.2025;19.12.2025;19.12.2025;Aneo Mobility AS (60750633717);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6075 06 33717;Aneo Mobility AS;;-341.54;NOK;Bokført;Til: Aneo Mobility AS Betalt: 19.12.25
+19.12.2025;19.12.2025;19.12.2025;SEB KORT AB, OSLOFIL.NUF (97500703559);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;9750 07 03559;SEB KORT AB, OSLOFIL.NUF;;-15023.31;NOK;Bokført;Til: SEB KORT AB, OSLOFIL.NUF Betalt: 19.12.25
+19.12.2025;19.12.2025;19.12.2025;BOLIGSAM. HARALD HÅRFAGRESGT.2 (42000715101);Betaling innland;Utgående betaling med melding;9051 16 07565;Brukskonto fordel ung;4200 07 15101;BOLIGSAM. HARALD HÅRFAGRESGT.2;;-3219;NOK;Bokført;"Til: BOLIGSAM. HARALD HÅRFAGRESGT.2 Betalt: 19.12.25
+Kristian Kjerstad"
+18.12.2025;18.12.2025;18.12.2025;Elisabeth Flåskjer Kjerstad;immediate;Straksbetaling;3900 13 44270;;9051 16 07565;Kristian Kjerstad;400;;NOK;Bokført;Fra: Elisabeth Flåskjer Kjerstad Betalt: 18.12.25
+17.12.2025;17.12.2025;17.12.2025;Vibb AS (15063103818);Betaling innland - Avtalegiro med eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;1506 31 03818;Vibb AS;;-1332.59;NOK;Bokført;Vibb AS
+17.12.2025;17.12.2025;17.12.2025;FLYT AS (32073595222);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;3207 35 95222;FLYT AS;;-197;NOK;Bokført;Til: FLYT AS Betalt: 17.12.25
+15.12.2025;15.12.2025;15.12.2025;Til konto: 9051 74 50544;Betaling innland;Nedbetaling av lån;9051 16 07565;Brukskonto fordel ung;9051 74 50544;;;-10292;NOK;Bokført;"Til:90517450544
+     Terminomkostninger: kr            45,00
+     Avdrag:             kr         4.654,00
+     Renter:             kr         5.593,00"
+15.12.2025;15.12.2025;13.12.2025;Hans Andreas Hestad Skiri;immediate;Straksbetaling;1203 70 36763;;9051 16 07565;Kristian Kjerstad;150;;NOK;Bokført;Fra: Hans Andreas Hestad Skiri Betalt: 13.12.25
+15.12.2025;15.12.2025;15.12.2025;Trondheim Kommune (42131958034);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;4213 19 58034;Trondheim Kommune;;-957;NOK;Bokført;Til: Trondheim Kommune Betalt: 15.12.25
+15.12.2025;15.12.2025;13.12.2025;Kristian Tobias Randa;immediate;Straksbetaling;1228 64 67650;;9051 16 07565;Kristian Kjerstad;30;;NOK;Bokført;Fra: Kristian Tobias Randa Betalt: 13.12.25
+15.12.2025;15.12.2025;14.12.2025;Hans Andreas Hestad Skiri;immediate;Straksbetaling;1203 70 36763;;9051 16 07565;Kristian Kjerstad;100;;NOK;Bokført;Fra: Hans Andreas Hestad Skiri Betalt: 14.12.25
+09.12.2025;09.12.2025;09.12.2025;Rungsiman Matkham;immediate;Straksbetaling;9523 20 45672;;9051 16 07565;Kristian Kjerstad;150;;NOK;Bokført;Fra: Rungsiman Matkham Betalt: 09.12.25
+08.12.2025;08.12.2025;07.12.2025;Andreas Bernhardsen;immediate;Straksbetaling;7592 11 13420;;9051 16 07565;Kristian Kjerstad;140;;NOK;Bokført;"Fra: Andreas Bernhardsen Betalt: 07.12.25
+Pizza på ølsmaking"
+08.12.2025;08.12.2025;07.12.2025;Overføring;Overføring;Kreditoverføring;;;9051 16 07565;Brukskonto fordel ung;140;;NOK;Bokført;*2567 07.12 NOK 140.00 Vipps*Stefan Ernst Per Kurs: 1.0000
+08.12.2025;08.12.2025;06.12.2025;Maximilian Kuch (42144308837);immediate;Straksbetaling;9051 16 07565;Kristian Kjerstad;4214 43 08837;Maximilian Kuch;;-105;NOK;Bokført;Til: Maximilian Kuch
+08.12.2025;08.12.2025;06.12.2025;Margrethe By;immediate;Straksbetaling;4202 02 63398;;9051 16 07565;Kristian Kjerstad;140;;NOK;Bokført;"Fra: Margrethe By Betalt: 06.12.25
+Pizza"
+08.12.2025;08.12.2025;06.12.2025;Iver Bye Bolstad;immediate;Straksbetaling;1229 17 14593;;9051 16 07565;Kristian Kjerstad;140;;NOK;Bokført;"Fra: Iver Bye Bolstad Betalt: 06.12.25
+Pizza"
+08.12.2025;08.12.2025;08.12.2025;Kristian brukskonto dnb (12072209913);Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;1207 22 09913;Kristian brukskonto dnb;;-3000;NOK;Bokført;"Til: 1207.22.09913 Betalt: 08.12.25
+overføring for aksjefond"
+05.12.2025;05.12.2025;05.12.2025;Til konto: 9051 16 07557;Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;9051 16 07557;;;-4000;NOK;Bokført;overføring sparekonto
+05.12.2025;05.12.2025;05.12.2025;Martin Stenmann Westergaard;immediate;Straksbetaling;4213 35 11274;;9051 16 07565;Kristian Kjerstad;140;;NOK;Bokført;"Fra: Martin Stenmann Westergaard Betalt: 05.12.25
+Pizza"
+04.12.2025;04.12.2025;04.12.2025;Brilliant AS;Betaling innland;Overføring fra annen konto;4212 14 52191;Brilliant AS;9051 16 07565;Kristian Kjerstad;721;;NOK;Bokført;Fra: Brilliant AS Betalt: 04.12.25
+01.12.2025;01.12.2025;01.12.2025;Lønn fra TEKNA-TEKNISK-NAT. FORENING;Lønn;Lønn;1503 71 57829;;9051 16 07565;Kristian Kjerstad;473.8;;NOK;Bokført;Fra: TEKNA-TEKNISK-NAT. FORENING
+01.12.2025;01.12.2025;01.12.2025;GJENSIDIGE FORSIKRING ASA (60050608460);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6005 06 08460;GJENSIDIGE FORSIKRING ASA;;-1272;NOK;Bokført;GJENSIDIGE FORSIKRING ASA
+26.11.2025;26.11.2025;26.11.2025;Overføring til Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07565;Brukskonto fordel ung;9051 16 07557;Sparekonto fordel;;-10000;NOK;Bokført;Til: 9051.16.07557 Betalt: 26.11.25
+25.11.2025;25.11.2025;25.11.2025;Statens Lånekasse for Utdannin (76940520300);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;7694 05 20300;Statens Lånekasse for Utdannin;;-2108;NOK;Bokført;Til: Statens Lånekasse for Utdannin Betalt: 25.11.25
+25.11.2025;25.11.2025;25.11.2025;Brilliant AS;Betaling innland;Overføring fra annen konto;4212 14 52191;Brilliant AS;9051 16 07565;Kristian Kjerstad;59444.2;;NOK;Bokført;Fra: Brilliant AS Betalt: 25.11.25
+24.11.2025;24.11.2025;24.11.2025;GJENSIDIGE FORSIKRING ASA (60050608460);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6005 06 08460;GJENSIDIGE FORSIKRING ASA;;-73;NOK;Bokført;GJENSIDIGE FORSIKRING ASA
+24.11.2025;24.11.2025;22.11.2025;Håkon Dahl;immediate;Straksbetaling;0540 26 34563;;9051 16 07565;Kristian Kjerstad;50;;NOK;Bokført;Fra: Håkon Dahl Betalt: 22.11.25
+21.11.2025;21.11.2025;21.11.2025;Carglass AS;Betaling innland;Overføring fra annen konto;4202 33 70055;Carglass AS;9051 16 07565;Kristian Kjerstad;159;;NOK;Bokført;"Fra: Carglass AS Betalt: 21.11.25
+utlegg parkering"
+21.11.2025;21.11.2025;20.11.2025;Overføring;Overføring;Kreditoverføring;;;9051 16 07565;Brukskonto fordel ung;225;;NOK;Bokført;*2567 20.11 NOK 225.00 Vipps*Martin Stenmann Kurs: 1.0000
+21.11.2025;21.11.2025;21.11.2025;Rungsiman Matkham;immediate;Straksbetaling;9523 20 45672;;9051 16 07565;Kristian Kjerstad;454;;NOK;Bokført;Fra: Rungsiman Matkham Betalt: 21.11.25
+20.11.2025;20.11.2025;20.11.2025;MYWORKOUT24.NO (42851729709);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;4285 17 29709;MYWORKOUT24.NO;;-329;NOK;Bokført;Faktura 130847591
+20.11.2025;20.11.2025;20.11.2025;Iver Bye Bolstad;immediate;Straksbetaling;1229 17 14593;;9051 16 07565;Kristian Kjerstad;225;;NOK;Bokført;Fra: Iver Bye Bolstad Betalt: 20.11.25
+20.11.2025;20.11.2025;20.11.2025;BOLIGSAM. HARALD HÅRFAGRESGT.2 (42000715101);Betaling innland;Utgående betaling med melding;9051 16 07565;Brukskonto fordel ung;4200 07 15101;BOLIGSAM. HARALD HÅRFAGRESGT.2;;-3219;NOK;Bokført;"Til: BOLIGSAM. HARALD HÅRFAGRESGT.2 Betalt: 20.11.25
+Kristian Kjerstad"
+20.11.2025;20.11.2025;20.11.2025;SEB KORT AB, OSLOFIL.NUF (97500703559);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;9750 07 03559;SEB KORT AB, OSLOFIL.NUF;;-18288.06;NOK;Bokført;Til: SEB KORT AB, OSLOFIL.NUF Betalt: 20.11.25
+19.11.2025;19.11.2025;19.11.2025;Vibb AS (15063103818);Betaling innland - Avtalegiro med eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;1506 31 03818;Vibb AS;;-828.93;NOK;Bokført;Vibb AS
+19.11.2025;19.11.2025;19.11.2025;Riverty Norway AS (15030825141);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;1503 08 25141;Riverty Norway AS;;-159;NOK;Bokført;Til: Riverty Norway AS Betalt: 19.11.25
+19.11.2025;19.11.2025;19.11.2025;Aneo Mobility AS (60750633717);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6075 06 33717;Aneo Mobility AS;;-357.6;NOK;Bokført;Til: Aneo Mobility AS Betalt: 19.11.25
+19.11.2025;19.11.2025;18.11.2025;Overføring;Overføring;Kreditoverføring;;;9051 16 07565;Brukskonto fordel ung;225;;NOK;Bokført;*2567 18.11 NOK 225.00 Vipps*Stefan Ernst Per Kurs: 1.0000
+18.11.2025;18.11.2025;18.11.2025;Andreas Bernhardsen;immediate;Straksbetaling;7592 11 13420;;9051 16 07565;Kristian Kjerstad;225;;NOK;Bokført;"Fra: Andreas Bernhardsen Betalt: 18.11.25
+Juleølsmaking"
+18.11.2025;18.11.2025;18.11.2025;Margrethe By;immediate;Straksbetaling;4202 02 63398;;9051 16 07565;Kristian Kjerstad;225;;NOK;Bokført;"Fra: Margrethe By Betalt: 18.11.25
+Juleølsmaking"
+17.11.2025;17.11.2025;15.11.2025;Til konto: 9051 73 78983;Betaling innland;Nedbetaling av lån;9051 16 07565;Brukskonto fordel ung;9051 73 78983;;;-13530;NOK;Bokført;"Til:90517378983
+     Terminomkostninger: kr            45,00
+     Avdrag:             kr         3.797,00
+     Renter:             kr         9.688,00"
+17.11.2025;17.11.2025;17.11.2025;Brilliant AS;Betaling innland;Overføring fra annen konto;4212 14 52191;Brilliant AS;9051 16 07565;Kristian Kjerstad;721;;NOK;Bokført;Fra: Brilliant AS Betalt: 17.11.25
+17.11.2025;17.11.2025;17.11.2025;Trondheim Kommune (42131958034);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;4213 19 58034;Trondheim Kommune;;-957;NOK;Bokført;Til: Trondheim Kommune Betalt: 15.11.25
+11.11.2025;11.11.2025;11.11.2025;Statens Kartverk (76940520181);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;7694 05 20181;Statens Kartverk;;-545;NOK;Bokført;Til: Statens Kartverk Betalt: 11.11.25
+10.11.2025;10.11.2025;10.11.2025;TELENOR NORGE AS TV/BREDBÅND (60050777130);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6005 07 77130;TELENOR NORGE AS TV/BREDBÅND;;-30.16;NOK;Bokført;Til: TELENOR NORGE AS TV/BREDBÅND Betalt: 10.11.25
+07.11.2025;07.11.2025;07.11.2025;Kristian brukskonto dnb (12072209913);Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;1207 22 09913;Kristian brukskonto dnb;;-3000;NOK;Bokført;"Til: 1207.22.09913 Betalt: 07.11.25
+overføring for aksjefond"
+05.11.2025;05.11.2025;05.11.2025;Til konto: 9051 16 07557;Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;9051 16 07557;;;-4000;NOK;Bokført;overføring sparekonto
+03.11.2025;03.11.2025;02.11.2025;Alexander Michael Ås (95230865850);immediate;Straksbetaling;9051 16 07565;Kristian Kjerstad;9523 08 65850;Alexander Michael Ås;;-78.66;NOK;Bokført;Til: Alexander Michael Ås
+03.11.2025;03.11.2025;01.11.2025;Maria Nikita Sæther;immediate;Straksbetaling;4750 93 57079;;9051 16 07565;Kristian Kjerstad;100;;NOK;Bokført;"Fra: Maria Nikita Sæther Betalt: 01.11.25
+Vipps"
+30.10.2025;30.10.2025;30.10.2025;GJENSIDIGE FORSIKRING ASA (60050608460);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6005 06 08460;GJENSIDIGE FORSIKRING ASA;;-1272;NOK;Bokført;GJENSIDIGE FORSIKRING ASA
+28.10.2025;28.10.2025;28.10.2025;Vibb AS (15063103818);Betaling innland - Avtalegiro med eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;1506 31 03818;Vibb AS;;-670.76;NOK;Bokført;Vibb AS
+27.10.2025;27.10.2025;27.10.2025;Statens Lånekasse for Utdannin (76940520300);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;7694 05 20300;Statens Lånekasse for Utdannin;;-2108;NOK;Bokført;Til: Statens Lånekasse for Utdannin Betalt: 25.10.25
+24.10.2025;24.10.2025;24.10.2025;GJENSIDIGE FORSIKRING ASA (60050608460);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6005 06 08460;GJENSIDIGE FORSIKRING ASA;;-73;NOK;Bokført;GJENSIDIGE FORSIKRING ASA
+24.10.2025;24.10.2025;24.10.2025;Brilliant AS;Betaling innland;Overføring fra annen konto;4212 14 52191;Brilliant AS;9051 16 07565;Kristian Kjerstad;47144.33;;NOK;Bokført;Fra: Brilliant AS Betalt: 24.10.25
+22.10.2025;22.10.2025;22.10.2025;Lønn fra TEKNA-TEKNISK-NAT. FORENING;Lønn;Lønn;1503 71 57829;;9051 16 07565;Kristian Kjerstad;635;;NOK;Bokført;Fra: TEKNA-TEKNISK-NAT. FORENING
+20.10.2025;20.10.2025;20.10.2025;MYWORKOUT24.NO (42851729709);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;4285 17 29709;MYWORKOUT24.NO;;-329;NOK;Bokført;Faktura 130840171
+20.10.2025;20.10.2025;20.10.2025;BOLIGSAM. HARALD HÅRFAGRESGT.2 (42000715101);Betaling innland;Utgående betaling med melding;9051 16 07565;Brukskonto fordel ung;4200 07 15101;BOLIGSAM. HARALD HÅRFAGRESGT.2;;-3219;NOK;Bokført;"Til: BOLIGSAM. HARALD HÅRFAGRESGT.2 Betalt: 20.10.25
+Kristian Kjerstad"
+20.10.2025;20.10.2025;20.10.2025;Aneo Mobility AS (60750633717);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6075 06 33717;Aneo Mobility AS;;-409.42;NOK;Bokført;Til: Aneo Mobility AS Betalt: 20.10.25
+20.10.2025;20.10.2025;20.10.2025;Til konto: 9523 20 45672;Betaling innland;Utgående betaling med melding;9051 16 07565;Brukskonto fordel ung;9523 20 45672;;;-181440;NOK;Bokført;"Til: 9523.20.45672 Betalt: 20.10.25
+Overføring for kjøp av bolig"
+20.10.2025;20.10.2025;20.10.2025;SEB KORT AB, OSLOFIL.NUF (97500703559);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;9750 07 03559;SEB KORT AB, OSLOFIL.NUF;;-19093.94;NOK;Bokført;Til: SEB KORT AB, OSLOFIL.NUF Betalt: 20.10.25
+20.10.2025;20.10.2025;20.10.2025;Kristian Kjerstad;Betaling innland;Overføring fra annen konto;1207 22 09913;Kristian Kjerstad;9051 16 07565;Kristian Kjerstad;200000;;NOK;Bokført;"Fra: Kristian Kjerstad Betalt: 19.10.25
+Overføring boligkjøp fra kitty"
+15.10.2025;15.10.2025;15.10.2025;Trondheim Kommune (42131958034);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;4213 19 58034;Trondheim Kommune;;-957;NOK;Bokført;Til: Trondheim Kommune Betalt: 15.10.25
+15.10.2025;15.10.2025;15.10.2025;Til konto: 9051 73 78983;Betaling innland;Nedbetaling av lån;9051 16 07565;Brukskonto fordel ung;9051 73 78983;;;-13530;NOK;Bokført;"Til:90517378983
+     Terminomkostninger: kr            45,00
+     Avdrag:             kr         4.092,00
+     Renter:             kr         9.393,00"
+09.10.2025;09.10.2025;09.10.2025;Rungsiman Matkham;immediate;Straksbetaling;9523 20 45672;;9051 16 07565;Kristian Kjerstad;2590;;NOK;Bokført;Fra: Rungsiman Matkham Betalt: 09.10.25
+09.10.2025;09.10.2025;09.10.2025;Til konto: 9523 20 45672;Betaling innland;Utgående betaling med melding;9051 16 07565;Brukskonto fordel ung;9523 20 45672;;;-19000;NOK;Bokført;"Til: 9523.20.45672 Betalt: 09.10.25
+Overføring for depositum, trekkes fra salg av bolig"
+07.10.2025;07.10.2025;07.10.2025;Kristian brukskonto dnb (12072209913);Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;1207 22 09913;Kristian brukskonto dnb;;-3000;NOK;Bokført;"Til: 1207.22.09913 Betalt: 07.10.25
+overføring for aksjefond"
+06.10.2025;06.10.2025;06.10.2025;Til konto: 9051 16 07557;Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;9051 16 07557;;;-4000;NOK;Bokført;overføring sparekonto
+06.10.2025;06.10.2025;06.10.2025;FLYT AS (32073595222);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;3207 35 95222;FLYT AS;;-460.84;NOK;Bokført;Til: FLYT AS Betalt: 06.10.25
+02.10.2025;02.10.2025;02.10.2025;Brilliant AS;Betaling innland;Overføring fra annen konto;4212 14 52191;Brilliant AS;9051 16 07565;Kristian Kjerstad;4400.4;;NOK;Bokført;Fra: Brilliant AS Betalt: 02.10.25
+30.09.2025;30.09.2025;30.09.2025;GJENSIDIGE FORSIKRING ASA (60050608460);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6005 06 08460;GJENSIDIGE FORSIKRING ASA;;-1272;NOK;Bokført;GJENSIDIGE FORSIKRING ASA
+25.09.2025;25.09.2025;25.09.2025;Statens Lånekasse for Utdannin (76940520300);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;7694 05 20300;Statens Lånekasse for Utdannin;;-2130;NOK;Bokført;Til: Statens Lånekasse for Utdannin Betalt: 25.09.25
+25.09.2025;25.09.2025;25.09.2025;Brilliant AS;Betaling innland;Overføring fra annen konto;4212 14 52191;Brilliant AS;9051 16 07565;Kristian Kjerstad;47144.33;;NOK;Bokført;Fra: Brilliant AS Betalt: 25.09.25
+24.09.2025;24.09.2025;24.09.2025;GJENSIDIGE FORSIKRING ASA (60050608460);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6005 06 08460;GJENSIDIGE FORSIKRING ASA;;-73;NOK;Bokført;GJENSIDIGE FORSIKRING ASA
+22.09.2025;22.09.2025;22.09.2025;SEB KORT AB, OSLOFIL.NUF (97500703559);Betaling innland;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;9750 07 03559;SEB KORT AB, OSLOFIL.NUF;;-16838.73;NOK;Bokført;Til: SEB KORT AB, OSLOFIL.NUF Betalt: 22.09.25
+22.09.2025;22.09.2025;22.09.2025;Overføring fra Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07557;Sparekonto fordel;9051 16 07565;Brukskonto fordel ung;10000;;NOK;Bokført;Fra: Kristian Kjerstad Betalt: 22.09.25
+22.09.2025;22.09.2025;22.09.2025;MYWORKOUT24.NO (42851729709);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;4285 17 29709;MYWORKOUT24.NO;;-329;NOK;Bokført;Faktura 130833053
+22.09.2025;22.09.2025;22.09.2025;Margrethe By;immediate;Straksbetaling;4202 02 63398;;9051 16 07565;Kristian Kjerstad;383;;NOK;Bokført;"Fra: Margrethe By Betalt: 22.09.25
+Flytaxi"
+19.09.2025;19.09.2025;19.09.2025;BOLIGSAM. HARALD HÅRFAGRESGT.2 (42000715101);Betaling innland;Utgående betaling med melding;9051 16 07565;Brukskonto fordel ung;4200 07 15101;BOLIGSAM. HARALD HÅRFAGRESGT.2;;-3219;NOK;Bokført;"Til: BOLIGSAM. HARALD HÅRFAGRESGT.2 Betalt: 19.09.25
+kristian kjerstad"
+19.09.2025;19.09.2025;19.09.2025;Aneo Mobility AS (60750633717);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6075 06 33717;Aneo Mobility AS;;-459.36;NOK;Bokført;Til: Aneo Mobility AS Betalt: 19.09.25
+17.09.2025;17.09.2025;17.09.2025;Vibb AS (15063103818);Betaling innland - Avtalegiro med eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;1506 31 03818;Vibb AS;;-610.27;NOK;Bokført;Vibb AS
+15.09.2025;15.09.2025;15.09.2025;Trondheim Kommune (42131958034);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;4213 19 58034;Trondheim Kommune;;-957;NOK;Bokført;Til: Trondheim Kommune Betalt: 15.09.25
+15.09.2025;15.09.2025;15.09.2025;Til konto: 9051 73 78983;Betaling innland;Nedbetaling av lån;9051 16 07565;Brukskonto fordel ung;9051 73 78983;;;-13530;NOK;Bokført;"Til:90517378983
+     Terminomkostninger: kr            45,00
+     Avdrag:             kr         3.611,00
+     Renter:             kr         9.874,00"
+12.09.2025;12.09.2025;12.09.2025;Rungsiman Matkham;immediate;Straksbetaling;9523 20 45672;;9051 16 07565;Kristian Kjerstad;400;;NOK;Bokført;Fra: Rungsiman Matkham Betalt: 12.09.25
+09.09.2025;09.09.2025;09.09.2025;Kristian Tobias Randa;immediate;Straksbetaling;4930 15 70227;;9051 16 07565;Kristian Kjerstad;200;;NOK;Bokført;"Fra: Kristian Tobias Randa Betalt: 09.09.25
+Vipps"
+08.09.2025;08.09.2025;08.09.2025;TRONDHEIM PARKERING AS (42132484869);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;4213 24 84869;TRONDHEIM PARKERING AS;;-47.5;NOK;Bokført;Til: TRONDHEIM PARKERING AS Betalt: 08.09.25
+08.09.2025;08.09.2025;08.09.2025;Firi AS (18130257786);Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;1813 02 57786;Firi AS;;-8000;NOK;Bokført;Til: Firi AS Betalt: 08.09.25
+08.09.2025;08.09.2025;08.09.2025;FLYT AS (32073595222);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;3207 35 95222;FLYT AS;;-1412.38;NOK;Bokført;Til: FLYT AS Betalt: 08.09.25
+08.09.2025;08.09.2025;08.09.2025;Kristian brukskonto dnb (12072209913);Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;1207 22 09913;Kristian brukskonto dnb;;-1500;NOK;Bokført;"Til: 1207.22.09913 Betalt: 08.09.25
+overføring for aksjefond"
+08.09.2025;08.09.2025;08.09.2025;Hans Andreas Hestad Skiri;immediate;Straksbetaling;1203 70 36763;;9051 16 07565;Kristian Kjerstad;1500;;NOK;Bokført;Fra: Hans Andreas Hestad Skiri Betalt: 08.09.25
+05.09.2025;05.09.2025;05.09.2025;Til konto: 9051 16 07557;Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;9051 16 07557;;;-8250;NOK;Bokført;sparing til diverse
+01.09.2025;01.09.2025;01.09.2025;GJENSIDIGE FORSIKRING ASA (60050608460);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6005 06 08460;GJENSIDIGE FORSIKRING ASA;;-1272;NOK;Bokført;GJENSIDIGE FORSIKRING ASA
+01.09.2025;01.09.2025;01.09.2025;Brilliant AS;Betaling innland;Overføring fra annen konto;4212 14 52191;Brilliant AS;9051 16 07565;Kristian Kjerstad;728;;NOK;Bokført;Fra: Brilliant AS Betalt: 01.09.25
+28.08.2025;28.08.2025;28.08.2025;Hans Andreas Hestad Skiri;immediate;Straksbetaling;1203 70 36763;;9051 16 07565;Kristian Kjerstad;495.5;;NOK;Bokført;"Fra: Hans Andreas Hestad Skiri Betalt: 28.08.25
+Road trip"
+27.08.2025;27.08.2025;27.08.2025;Vibb AS (15063103818);Betaling innland - Avtalegiro med eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;1506 31 03818;Vibb AS;;-458.15;NOK;Bokført;Vibb AS
+25.08.2025;25.08.2025;25.08.2025;GJENSIDIGE FORSIKRING ASA (60050608460);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6005 06 08460;GJENSIDIGE FORSIKRING ASA;;-73;NOK;Bokført;GJENSIDIGE FORSIKRING ASA
+25.08.2025;25.08.2025;25.08.2025;Statens Lånekasse for Utdannin (76940520300);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;7694 05 20300;Statens Lånekasse for Utdannin;;-2130;NOK;Bokført;Til: Statens Lånekasse for Utdannin Betalt: 25.08.25
+25.08.2025;25.08.2025;25.08.2025;Brilliant AS;Betaling innland;Overføring fra annen konto;4212 14 52191;Brilliant AS;9051 16 07565;Kristian Kjerstad;45268.33;;NOK;Bokført;Fra: Brilliant AS Betalt: 25.08.25
+21.08.2025;21.08.2025;21.08.2025;Kristian Tobias Randa;immediate;Straksbetaling;4930 15 70227;;9051 16 07565;Kristian Kjerstad;199;;NOK;Bokført;"Fra: Kristian Tobias Randa Betalt: 21.08.25
+Vipps"
+20.08.2025;20.08.2025;20.08.2025;BOLIGSAM. HARALD HÅRFAGRESGT.2 (42000715101);Betaling innland;Utgående betaling med melding;9051 16 07565;Brukskonto fordel ung;4200 07 15101;BOLIGSAM. HARALD HÅRFAGRESGT.2;;-3219;NOK;Bokført;"Til: BOLIGSAM. HARALD HÅRFAGRESGT.2 Betalt: 20.08.25
+kristian kjerstad"
+20.08.2025;20.08.2025;20.08.2025;Resurs Bank AB NUF (99029531729);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;9902 95 31729;Resurs Bank AB NUF;;-239;NOK;Bokført;Til: Resurs Bank AB NUF Betalt: 20.08.25
+20.08.2025;20.08.2025;20.08.2025;SEB KORT AB, OSLOFIL.NUF (97500703559);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;9750 07 03559;SEB KORT AB, OSLOFIL.NUF;;-17619.03;NOK;Bokført;Til: SEB KORT AB, OSLOFIL.NUF Betalt: 20.08.25
+20.08.2025;20.08.2025;20.08.2025;MYWORKOUT24.NO (42851729709);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;4285 17 29709;MYWORKOUT24.NO;;-329;NOK;Bokført;Faktura 130825914
+19.08.2025;19.08.2025;19.08.2025;Aneo Mobility AS (60750633717);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6075 06 33717;Aneo Mobility AS;;-523.4;NOK;Bokført;Til: Aneo Mobility AS Betalt: 19.08.25
+18.08.2025;18.08.2025;18.08.2025;Overføring fra Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07557;Sparekonto fordel;9051 16 07565;Brukskonto fordel ung;6400;;NOK;Bokført;Fra: Kristian Kjerstad Betalt: 18.08.25
+15.08.2025;15.08.2025;15.08.2025;Til konto: 9051 73 78983;Betaling innland;Nedbetaling av lån;9051 16 07565;Brukskonto fordel ung;9051 73 78983;;;-13854;NOK;Bokført;Til:90517378983
+15.08.2025;15.08.2025;15.08.2025;Trondheim Kommune (42131958034);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;4213 19 58034;Trondheim Kommune;;-957;NOK;Bokført;Til: Trondheim Kommune Betalt: 15.08.25
+14.08.2025;14.08.2025;14.08.2025;Brilliant AS;Betaling innland;Overføring fra annen konto;4212 14 52191;Brilliant AS;9051 16 07565;Kristian Kjerstad;2285.92;;NOK;Bokført;Fra: Brilliant AS Betalt: 14.08.25
+07.08.2025;07.08.2025;07.08.2025;Firi AS (18130257786);Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;1813 02 57786;Firi AS;;-8000;NOK;Bokført;Til: Firi AS Betalt: 07.08.25
+07.08.2025;07.08.2025;07.08.2025;FLYT AS (32073595222);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;3207 35 95222;FLYT AS;;-494.8;NOK;Bokført;Til: FLYT AS Betalt: 07.08.25
+07.08.2025;07.08.2025;07.08.2025;Kristian brukskonto dnb (12072209913);Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;1207 22 09913;Kristian brukskonto dnb;;-1500;NOK;Bokført;"Til: 1207.22.09913 Betalt: 07.08.25
+overføring for aksjefond"
+05.08.2025;05.08.2025;05.08.2025;Til konto: 9051 16 07557;Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;9051 16 07557;;;-8250;NOK;Bokført;sparing til diverse
+04.08.2025;04.08.2025;02.08.2025;Vipps MobilePay (50055000724);immediate;Straksbetaling;9051 16 07565;Kristian Kjerstad;5005 50 00724;Vipps MobilePay;;-150;NOK;Bokført;"Til: Vipps MobilePay
+Id 34372799008. Vipps kasse YT magic gift deposit."
+30.07.2025;30.07.2025;30.07.2025;GJENSIDIGE FORSIKRING ASA (60050608460);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6005 06 08460;GJENSIDIGE FORSIKRING ASA;;-1282;NOK;Bokført;GJENSIDIGE FORSIKRING ASA
+28.07.2025;28.07.2025;28.07.2025;Elisabeth Flåskjer Kjerstad;immediate;Straksbetaling;3900 13 44270;;9051 16 07565;Kristian Kjerstad;800;;NOK;Bokført;Fra: Elisabeth Flåskjer Kjerstad Betalt: 28.07.25
+28.07.2025;28.07.2025;28.07.2025;Patrick Kulongwase Karlsen;immediate;Straksbetaling;1208 90 97906;;9051 16 07565;Kristian Kjerstad;160;;NOK;Bokført;Fra: Patrick Kulongwase Karlsen Betalt: 28.07.25
+28.07.2025;28.07.2025;28.07.2025;Firi AS (18130257786);Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;1813 02 57786;Firi AS;;-300;NOK;Bokført;Til: Firi AS Betalt: 28.07.25
+25.07.2025;25.07.2025;25.07.2025;Brilliant AS;Betaling innland;Overføring fra annen konto;4212 14 52191;Brilliant AS;9051 16 07565;Kristian Kjerstad;45268.33;;NOK;Bokført;Fra: Brilliant AS Betalt: 25.07.25
+25.07.2025;25.07.2025;25.07.2025;Statens Lånekasse for Utdannin (76940520300);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;7694 05 20300;Statens Lånekasse for Utdannin;;-2143;NOK;Bokført;Til: Statens Lånekasse for Utdannin Betalt: 25.07.25
+25.07.2025;25.07.2025;25.07.2025;STAR WASH AS;Varekjøp;Varekjøp debetkort;9051 16 07565;Kristian Kjerstad;;;;-50;NOK;Bokført;*2567 24.07 NOK 50.00 STAR WASH AS Kurs: 1.0000
+24.07.2025;24.07.2025;24.07.2025;GJENSIDIGE FORSIKRING ASA (60050608460);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6005 06 08460;GJENSIDIGE FORSIKRING ASA;;-73;NOK;Bokført;GJENSIDIGE FORSIKRING ASA
+21.07.2025;21.07.2025;21.07.2025;Vibb AS (15063103818);Betaling innland - Avtalegiro med eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;1506 31 03818;Vibb AS;;-631.66;NOK;Bokført;Vibb AS
+21.07.2025;21.07.2025;21.07.2025;MYWORKOUT24.NO (42851729709);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;4285 17 29709;MYWORKOUT24.NO;;-329;NOK;Bokført;Faktura 130819407
+21.07.2025;21.07.2025;21.07.2025;SEB KORT AB, OSLOFIL.NUF (97500703559);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;9750 07 03559;SEB KORT AB, OSLOFIL.NUF;;-24585.85;NOK;Bokført;Til: SEB KORT AB, OSLOFIL.NUF Betalt: 20.07.25
+21.07.2025;21.07.2025;21.07.2025;Aneo Mobility AS (60750633717);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6075 06 33717;Aneo Mobility AS;;-648.21;NOK;Bokført;Til: Aneo Mobility AS Betalt: 19.07.25
+21.07.2025;21.07.2025;21.07.2025;BOLIGSAM. HARALD HÅRFAGRESGT.2 (42000715101);Betaling innland;Utgående betaling med melding;9051 16 07565;Brukskonto fordel ung;4200 07 15101;BOLIGSAM. HARALD HÅRFAGRESGT.2;;-3219;NOK;Bokført;"Til: BOLIGSAM. HARALD HÅRFAGRESGT.2 Betalt: 20.07.25
+kristian kjerstad"
+18.07.2025;18.07.2025;18.07.2025;Kristian Tobias Randa;immediate;Straksbetaling;4930 15 70227;;9051 16 07565;Kristian Kjerstad;100;;NOK;Bokført;"Fra: Kristian Tobias Randa Betalt: 18.07.25
+Vipps"
+18.07.2025;18.07.2025;18.07.2025;Hans Andreas Hestad Skiri;immediate;Straksbetaling;1203 70 36763;;9051 16 07565;Kristian Kjerstad;100;;NOK;Bokført;Fra: Hans Andreas Hestad Skiri Betalt: 18.07.25
+18.07.2025;18.07.2025;18.07.2025;TEKNA-TEKNISK NATURVIT.FOREN. (15037157829);Betaling innland - Avtalegiro med eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;1503 71 57829;TEKNA-TEKNISK NATURVIT.FOREN.;;-2622;NOK;Bokført;TEKNA-KONTINGENT
+17.07.2025;17.07.2025;17.07.2025;Overføring fra Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07557;Sparekonto fordel;9051 16 07565;Brukskonto fordel ung;13000;;NOK;Bokført;Fra: Kristian Kjerstad Betalt: 17.07.25
+15.07.2025;15.07.2025;15.07.2025;Til konto: 9051 73 78983;Betaling innland;Nedbetaling av lån;9051 16 07565;Brukskonto fordel ung;9051 73 78983;;;-13854;NOK;Bokført;"Til:90517378983
+     Terminomkostninger: kr            45,00
+     Avdrag:             kr         3.923,00
+     Renter:             kr         9.886,00"
+15.07.2025;15.07.2025;15.07.2025;Trondheim Kommune (42131958034);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;4213 19 58034;Trondheim Kommune;;-989;NOK;Bokført;Til: Trondheim Kommune Betalt: 15.07.25
+15.07.2025;15.07.2025;15.07.2025;Handelsbanken Avd Hovedkontor (90559502315);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;9055 95 02315;Handelsbanken Avd Hovedkontor;;-305.27;NOK;Bokført;Til: Handelsbanken Avd Hovedkontor Betalt: 15.07.25
+14.07.2025;14.07.2025;14.07.2025;Kristian Kjerstad;Betaling innland;Overføring fra annen konto;1207 22 09913;Kristian Kjerstad;9051 16 07565;Kristian Kjerstad;10915;;NOK;Bokført;"Fra: Kristian Kjerstad Betalt: 11.07.25
+."
+14.07.2025;14.07.2025;13.07.2025;Thomas Holene Løkkeborg;immediate;Straksbetaling;3910 47 99748;;9051 16 07565;Kristian Kjerstad;87;;NOK;Bokført;Fra: Thomas Holene Løkkeborg Betalt: 13.07.25
+14.07.2025;14.07.2025;13.07.2025;Overføring;Overføring;Kreditoverføring;;;9051 16 07565;Brukskonto fordel ung;87;;NOK;Bokført;*2567 13.07 NOK 87.00 Vipps*Alexander Michae Kurs: 1.0000
+07.07.2025;07.07.2025;07.07.2025;Til konto: 9051 16 07557;Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;9051 16 07557;;;-8250;NOK;Bokført;sparing til diverse
+07.07.2025;07.07.2025;07.07.2025;Kristian brukskonto dnb (12072209913);Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;1207 22 09913;Kristian brukskonto dnb;;-9500;NOK;Bokført;"Til: 1207.22.09913 Betalt: 07.07.25
+overføring for aksjefond"
+07.07.2025;07.07.2025;05.07.2025;Kristian Tobias Randa;immediate;Straksbetaling;1228 64 67650;;9051 16 07565;Kristian Kjerstad;40;;NOK;Bokført;Fra: Kristian Tobias Randa Betalt: 05.07.25
+07.07.2025;07.07.2025;07.07.2025;Vipps*AtB App;Varekjøp;Varekjøp debetkort;9051 16 07565;Kristian Kjerstad;;;;-45;NOK;Bokført;*2567 05.07 NOK 45.00 Vipps*AtB App Kurs: 1.0000
+04.07.2025;04.07.2025;04.07.2025;Dinter*BOOKIBUD;Varekjøp;Varekjøp debetkort;9051 16 07565;Kristian Kjerstad;;;;-255;NOK;Bokført;*2567 03.07 NOK 255.00 Dinter*BOOKIBUD Kurs: 1.0000
+30.06.2025;30.06.2025;29.06.2025;Hans Andreas Hestad Skiri;immediate;Straksbetaling;1203 70 36763;;9051 16 07565;Kristian Kjerstad;99;;NOK;Bokført;Fra: Hans Andreas Hestad Skiri Betalt: 29.06.25
+30.06.2025;30.06.2025;30.06.2025;Vipps*NETONNET;Varekjøp;Varekjøp debetkort;9051 16 07565;Kristian Kjerstad;;;;-377;NOK;Bokført;*2567 28.06 NOK 377.00 Vipps*NETONNET Kurs: 1.0000
+30.06.2025;30.06.2025;28.06.2025;Hans Andreas Hestad Skiri;immediate;Straksbetaling;1203 70 36763;;9051 16 07565;Kristian Kjerstad;110;;NOK;Bokført;Fra: Hans Andreas Hestad Skiri Betalt: 28.06.25
+27.06.2025;27.06.2025;27.06.2025;Firi AS (18130257786);Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;1813 02 57786;Firi AS;;-300;NOK;Bokført;Til: Firi AS Betalt: 27.06.25
+26.06.2025;26.06.2025;26.06.2025;Overføring til Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07565;Brukskonto fordel ung;9051 16 07557;Sparekonto fordel;;-25000;NOK;Bokført;Til: 9051.16.07557 Betalt: 26.06.25
+25.06.2025;25.06.2025;25.06.2025;Statens Lånekasse for Utdannin (76940520300);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;7694 05 20300;Statens Lånekasse for Utdannin;;-2143;NOK;Bokført;Til: Statens Lånekasse for Utdannin Betalt: 25.06.25
+25.06.2025;25.06.2025;25.06.2025;Brilliant AS;Betaling innland;Overføring fra annen konto;4212 14 52191;Brilliant AS;9051 16 07565;Kristian Kjerstad;72273.09;;NOK;Bokført;Fra: Brilliant AS Betalt: 25.06.25
+24.06.2025;24.06.2025;24.06.2025;GJENSIDIGE FORSIKRING ASA (60050608460);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;6005 06 08460;GJENSIDIGE FORSIKRING ASA;;-73;NOK;Bokført;GJENSIDIGE FORSIKRING ASA
+24.06.2025;24.06.2025;24.06.2025;NAF AS;Varekjøp;Varekjøp debetkort;9051 16 07565;Kristian Kjerstad;;;;-349;NOK;Bokført;*2567 23.06 NOK 349.00 NAF AS Kurs: 1.0000
+24.06.2025;24.06.2025;24.06.2025;EGON PRINSEN;Varekjøp;Varekjøp debetkort;9051 16 07565;Kristian Kjerstad;;;;-310;NOK;Bokført;*2567 23.06 NOK 310.00 EGON PRINSEN Kurs: 1.0000
+23.06.2025;23.06.2025;23.06.2025;Overføring til Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07565;Brukskonto fordel ung;9051 16 07557;Sparekonto fordel;;-230000;NOK;Bokført;Til: 9051.16.07557 Betalt: 23.06.25
+23.06.2025;23.06.2025;23.06.2025;Overføring fra Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07557;Sparekonto fordel;9051 16 07565;Brukskonto fordel ung;230000;;NOK;Bokført;Fra: Kristian Kjerstad Betalt: 23.06.25
+23.06.2025;23.06.2025;21.06.2025;Rungsiman Matkham;immediate;Straksbetaling;9523 20 45672;;9051 16 07565;Kristian Kjerstad;600;;NOK;Bokført;Fra: Rungsiman Matkham Betalt: 21.06.25
+23.06.2025;23.06.2025;21.06.2025;Andreas Kjerstad;immediate;Straksbetaling;1203 64 42083;;9051 16 07565;Kristian Kjerstad;600;;NOK;Bokført;"Fra: Andreas Kjerstad Betalt: 21.06.25
+Tacos"
+20.06.2025;20.06.2025;20.06.2025;MYWORKOUT24.NO (42851729709);Betaling innland - Avtalegiro;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;4285 17 29709;MYWORKOUT24.NO;;-329;NOK;Bokført;Faktura 130812627
+20.06.2025;20.06.2025;20.06.2025;SEB KORT AB, OSLOFIL.NUF (97500703559);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;9750 07 03559;SEB KORT AB, OSLOFIL.NUF;;-11919.04;NOK;Bokført;Til: SEB KORT AB, OSLOFIL.NUF Betalt: 20.06.25
+20.06.2025;20.06.2025;20.06.2025;Overføring fra Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07557;Sparekonto fordel;9051 16 07565;Brukskonto fordel ung;500;;NOK;Bokført;Fra: Kristian Kjerstad Betalt: 20.06.25
+20.06.2025;20.06.2025;20.06.2025;BOLIGSAM. HARALD HÅRFAGRESGT.2 (42000715101);Betaling innland;Utgående betaling med melding;9051 16 07565;Brukskonto fordel ung;4200 07 15101;BOLIGSAM. HARALD HÅRFAGRESGT.2;;-3219;NOK;Bokført;"Til: BOLIGSAM. HARALD HÅRFAGRESGT.2 Betalt: 20.06.25
+kristian kjerstad"
+19.06.2025;19.06.2025;19.06.2025;Hans Andreas Hestad Skiri;immediate;Straksbetaling;1203 70 36763;;9051 16 07565;Kristian Kjerstad;80;;NOK;Bokført;Fra: Hans Andreas Hestad Skiri Betalt: 19.06.25
+19.06.2025;19.06.2025;19.06.2025;Vibb AS (15063103818);Betaling innland - Avtalegiro med eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;1506 31 03818;Vibb AS;;-671.76;NOK;Bokført;Vibb AS
+18.06.2025;18.06.2025;18.06.2025;Overføring fra Sparekonto fordel;Overføring;Overføring til egen konto;9051 16 07557;Sparekonto fordel;9051 16 07565;Brukskonto fordel ung;8000;;NOK;Bokført;Fra: Kristian Kjerstad Betalt: 18.06.25
+18.06.2025;18.06.2025;18.06.2025;Hans Andreas Hestad Skiri (12037036763);immediate;Straksbetaling;9051 16 07565;Kristian Kjerstad;1203 70 36763;Hans Andreas Hestad Skiri;;-751.95;NOK;Bokført;Til: Hans Andreas Hestad Skiri
+17.06.2025;17.06.2025;17.06.2025;Kristian Kjerstad;Betaling innland;Overføring fra annen konto;1207 22 09913;Kristian Kjerstad;9051 16 07565;Kristian Kjerstad;7000;;NOK;Bokført;"Fra: Kristian Kjerstad Betalt: 16.06.25
+."
+16.06.2025;16.06.2025;14.06.2025;Karen Jo Fiksdahl (42131880779);immediate;Straksbetaling;9051 16 07565;Kristian Kjerstad;4213 18 80779;Karen Jo Fiksdahl;;-205.98;NOK;Bokført;Til: Karen Jo Fiksdahl
+16.06.2025;16.06.2025;16.06.2025;HYRE AS;Betaling innland;Overføring fra annen konto;8101 45 73550;HYRE AS;9051 16 07565;Kristian Kjerstad;600;;NOK;Bokført;Fra: HYRE AS Betalt: 15.06.25
+16.06.2025;16.06.2025;14.06.2025;Julie Davidsen;immediate;Straksbetaling;4202 13 47951;;9051 16 07565;Kristian Kjerstad;726.66;;NOK;Bokført;"Fra: Julie Davidsen Betalt: 14.06.25
+Mat to glass vin og litt vann"
+16.06.2025;16.06.2025;15.06.2025;Overføring fra Mastercard;Overføring;Overføring til egen konto;9051 15 34711;Mastercard;9051 16 07565;Brukskonto fordel ung;307;;NOK;Bokført;Fra: Kristian Kjerstad Betalt: 15.06.25
+16.06.2025;16.06.2025;15.06.2025;Overføring til Mastercard;Overføring;Overføring til egen konto;9051 16 07565;Brukskonto fordel ung;9051 15 34711;Mastercard;;-307;NOK;Bokført;Til: 9051.15.34711 Betalt: 15.06.25
+16.06.2025;16.06.2025;15.06.2025;Til konto: 9051 73 78983;Betaling innland;Nedbetaling av lån;9051 16 07565;Brukskonto fordel ung;9051 73 78983;;;-13591;NOK;Bokført;"Til:90517378983
+     Avdrag:             kr         3.680,00
+     Renter:             kr         9.866,00
+     Terminomkostninger: kr            45,00"
+16.06.2025;16.06.2025;16.06.2025;Trondheim Kommune (42131958034);Betaling innland - eFaktura;Betaling med KID innland;9051 16 07565;Brukskonto fordel ung;4213 19 58034;Trondheim Kommune;;-989;NOK;Bokført;Til: Trondheim Kommune Betalt: 15.06.25
+13.06.2025;13.06.2025;13.06.2025;Patrick Kulongwase Karlsen;immediate;Straksbetaling;1208 90 97906;;9051 16 07565;Kristian Kjerstad;340.66;;NOK;Bokført;"Fra: Patrick Kulongwase Karlsen Betalt: 13.06.25
+Tuuuuur"
+12.06.2025;12.06.2025;12.06.2025;Kristian Tobias Randa;immediate;Straksbetaling;4930 15 70227;;9051 16 07565;Kristian Kjerstad;180;;NOK;Bokført;"Fra: Kristian Tobias Randa Betalt: 12.06.25
+Vipps"
+10.06.2025;10.06.2025;08.06.2025;Hans Andreas Hestad Skiri;immediate;Straksbetaling;1203 70 36763;;9051 16 07565;Kristian Kjerstad;100;;NOK;Bokført;Fra: Hans Andreas Hestad Skiri Betalt: 08.06.25
+10.06.2025;10.06.2025;08.06.2025;Kristian Tobias Randa (49301570227);immediate;Straksbetaling;9051 16 07565;Kristian Kjerstad;4930 15 70227;Kristian Tobias Randa;;-69;NOK;Bokført;Til: Kristian Tobias Randa
+10.06.2025;10.06.2025;09.06.2025;Hans Andreas Hestad Skiri;immediate;Straksbetaling;1203 70 36763;;9051 16 07565;Kristian Kjerstad;45;;NOK;Bokført;Fra: Hans Andreas Hestad Skiri Betalt: 09.06.25
+05.06.2025;05.06.2025;05.06.2025;Til konto: 9051 16 07557;Betaling innland;Utgående betaling;9051 16 07565;Brukskonto fordel ung;9051 16 07557;;;-8250;NOK;Bokført;sparing til diverse
+03.06.2025;03.06.2025;03.06.2025;Hans Andreas Hestad Skiri (12037036763);immediate;Straksbetaling;9051 16 07565;Kristian Kjerstad;1203 70 36763;Hans Andreas Hestad Skiri;;-40;NOK;Bokført;Til: Hans Andreas Hestad Skiri
+02.06.2025;02.06.2025;31.05.2025;Kristian Tobias Randa (49301570227);immediate;Straksbetaling;9051 16 07565;Kristian Kjerstad;4930 15 70227;Kristian Tobias Randa;;-65;NOK;Bokført;Til: Kristian Tobias Randa
+02.06.2025;02.06.2025;02.06.2025;Hans Andreas Hestad Skiri;immediate;Straksbetaling;1203 70 36763;;9051 16 07565;Kristian Kjerstad;175;;NOK;Bokført;Fra: Hans Andreas Hestad Skiri Betalt: 02.06.25
+02.06.2025;02.06.2025;02.06.2025;Hans Andreas Hestad Skiri (12037036763);immediate;Straksbetaling;9051 16 07565;Kristian Kjerstad;1203 70 36763;Hans Andreas Hestad Skiri;;-69;NOK;Bokført;Til: Hans Andreas Hestad Skiri
+;;;;;;;;;;;;;;
+Total beløp inn på konto:;;1 442 682,77 NOK;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+Totalt beløp ut av konto:;;-1 451 335,71 NOK;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+Inngående saldo pr. 01.06.2025:;;22 515,15 NOK;;;;;;;;;;;;
+;;;;;;;;;;;;;;
+Utgående  saldo pr. 03.07.2026:;;13 862,21 NOK;;;;;;;;;;;;

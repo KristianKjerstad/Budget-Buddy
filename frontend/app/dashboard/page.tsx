@@ -1,6 +1,6 @@
 "use client"
 
-import { useMemo } from "react"
+import { useMemo, useState } from "react"
 import { PageHeader } from "@/components/page-header"
 import { StatCard } from "@/components/stat-card"
 import { SectionCard } from "@/components/section-card"
@@ -37,6 +37,15 @@ const CATEGORY_COLORS: Record<string, string> = {
 
 const FALLBACK_CATEGORY_COLORS = ["#2563EB", "#16A34A", "#9333EA", "#F97316", "#EF4444", "#0EA5E9"]
 
+type TimeFilter = "all" | "year" | "month" | "custom"
+
+const TIME_FILTERS: Array<{ value: TimeFilter; label: string }> = [
+  { value: "all", label: "All time" },
+  { value: "year", label: "This year" },
+  { value: "month", label: "This month" },
+  { value: "custom", label: "Custom range" },
+]
+
 function formatNOK(amount: number): string {
   return `kr ${Math.abs(amount).toLocaleString("nb-NO", { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`
 }
@@ -57,8 +66,31 @@ function formatRecentDate(value: string): string {
   return `${day}.${month}`
 }
 
+function formatDateInput(date: Date): string {
+  const year = date.getFullYear()
+  const month = String(date.getMonth() + 1).padStart(2, "0")
+  const day = String(date.getDate()).padStart(2, "0")
+  return `${year}-${month}-${day}`
+}
+
+function parseInputDate(value: string): Date | null {
+  if (!value) {
+    return null
+  }
+
+  const [year, month, day] = value.split("-").map(Number)
+  if (!year || !month || !day) {
+    return null
+  }
+
+  return new Date(year, month - 1, day)
+}
+
 export default function DashboardPage() {
   const { data: transactions = [] } = useTransactions()
+  const [timeFilter, setTimeFilter] = useState<TimeFilter>("month")
+  const [customStartDate, setCustomStartDate] = useState<string>(formatDateInput(new Date(new Date().getFullYear(), 0, 1)))
+  const [customEndDate, setCustomEndDate] = useState<string>(formatDateInput(new Date()))
 
   const {
     monthlySpendingData,
@@ -68,8 +100,10 @@ export default function DashboardPage() {
     transactionCountCurrentMonth,
     largestExpenseAmount,
     largestExpenseLabel,
-    netFlowCurrentMonth,
+    netFlowInRange,
     spendingTrend,
+    periodSubtitle,
+    chartSubtitle,
   } = useMemo(() => {
     const now = new Date()
     const currentMonth = now.getMonth()
@@ -86,9 +120,32 @@ export default function DashboardPage() {
     const isInMonth = (date: Date, month: number, year: number) =>
       date.getMonth() === month && date.getFullYear() === year
 
-    const currentMonthTransactions = parsedTransactions.filter((transaction) =>
-      isInMonth(transaction.parsedDate, currentMonth, currentYear)
-    )
+    const startOfYear = new Date(currentYear, 0, 1)
+    const startOfMonth = new Date(currentYear, currentMonth, 1)
+
+    const customStart = parseInputDate(customStartDate)
+    const customEnd = parseInputDate(customEndDate)
+    const startOfCustom = customStart ?? startOfYear
+    const endOfCustom = customEnd ?? now
+    const endOfCustomDay = new Date(endOfCustom.getFullYear(), endOfCustom.getMonth(), endOfCustom.getDate(), 23, 59, 59, 999)
+
+    const isInSelectedRange = (date: Date) => {
+      if (timeFilter === "all") {
+        return true
+      }
+
+      if (timeFilter === "year") {
+        return date >= startOfYear && date <= now
+      }
+
+      if (timeFilter === "month") {
+        return date >= startOfMonth && date <= now
+      }
+
+      return date >= startOfCustom && date <= endOfCustomDay
+    }
+
+    const filteredTransactions = parsedTransactions.filter((transaction) => isInSelectedRange(transaction.parsedDate))
 
     const previousMonthTransactions = parsedTransactions.filter((transaction) =>
       isInMonth(transaction.parsedDate, previousMonthDate.getMonth(), previousMonthDate.getFullYear())
@@ -97,7 +154,7 @@ export default function DashboardPage() {
     const sumExpenses = (items: typeof parsedTransactions) =>
       items.reduce((sum, transaction) => sum + transaction.amount, 0)
 
-    const totalSpent = sumExpenses(currentMonthTransactions)
+    const totalSpent = sumExpenses(filteredTransactions)
     const previousMonthSpent = sumExpenses(previousMonthTransactions)
 
     const trendValue =
@@ -106,7 +163,7 @@ export default function DashboardPage() {
         : 0
 
     const spendingTrend =
-      previousMonthSpent > 0
+      timeFilter === "month" && previousMonthSpent > 0
         ? {
             value: Math.abs(trendValue),
             label:
@@ -117,32 +174,40 @@ export default function DashboardPage() {
           }
         : undefined
 
-    const largestExpense = currentMonthTransactions
+    const largestExpense = [...filteredTransactions]
       .sort((a, b) => b.amount - a.amount)[0]
 
-    const monthlySpendingData = Array.from({ length: 12 }, (_, index) => {
-      const monthDate = new Date(currentYear, currentMonth - (11 - index), 1)
-      const amount = parsedTransactions.reduce((sum, transaction) => {
-        if (!isInMonth(transaction.parsedDate, monthDate.getMonth(), monthDate.getFullYear())) {
-          return sum
-        }
+    const groupedByMonth = filteredTransactions.reduce<Record<string, number>>((acc, transaction) => {
+      const key = `${transaction.parsedDate.getFullYear()}-${String(transaction.parsedDate.getMonth() + 1).padStart(2, "0")}`
+      acc[key] = (acc[key] ?? 0) + transaction.amount
+      return acc
+    }, {})
 
-        return sum + transaction.amount
-      }, 0)
+    const monthKeys = Object.keys(groupedByMonth).sort()
+    const monthlySpendingData = monthKeys.map((key) => {
+      const [year, month] = key.split("-").map(Number)
+      const monthDate = new Date(year, month - 1, 1)
 
       return {
         month: monthDate.toLocaleString("nb-NO", { month: "short" }),
-        amount,
+        amount: groupedByMonth[key],
       }
     })
 
-    const currentMonthCategoryTotals = currentMonthTransactions.reduce<Record<string, number>>((acc, transaction) => {
+    if (monthlySpendingData.length === 0) {
+      monthlySpendingData.push({
+        month: now.toLocaleString("nb-NO", { month: "short" }),
+        amount: 0,
+      })
+    }
+
+    const categoryTotals = filteredTransactions.reduce<Record<string, number>>((acc, transaction) => {
       const categoryName = transaction.category?.name ?? "Uncategorized"
       acc[categoryName] = (acc[categoryName] ?? 0) + transaction.amount
       return acc
     }, {})
 
-    const categoryData = Object.entries(currentMonthCategoryTotals)
+    const categoryData = Object.entries(categoryTotals)
       .sort(([, amountA], [, amountB]) => amountB - amountA)
       .slice(0, 6)
       .map(([name, amount], index) => ({
@@ -151,7 +216,7 @@ export default function DashboardPage() {
         color: CATEGORY_COLORS[name] ?? FALLBACK_CATEGORY_COLORS[index % FALLBACK_CATEGORY_COLORS.length],
       }))
 
-    const recentTransactions = [...parsedTransactions]
+    const recentTransactions = [...filteredTransactions]
       .sort((a, b) => b.parsedDate.getTime() - a.parsedDate.getTime())
       .slice(0, 6)
       .map((transaction) => {
@@ -168,20 +233,40 @@ export default function DashboardPage() {
         }
       })
 
-    const netFlowCurrentMonth = currentMonthTransactions.reduce((sum, transaction) => sum + transaction.amount, 0)
+    const netFlowInRange = filteredTransactions.reduce((sum, transaction) => sum + transaction.amount, 0)
+
+    const periodSubtitle =
+      timeFilter === "all"
+        ? "all time"
+        : timeFilter === "year"
+          ? "this year"
+          : timeFilter === "month"
+            ? "this month"
+            : "custom range"
+
+    const chartSubtitle =
+      timeFilter === "all"
+        ? "All recorded months"
+        : timeFilter === "year"
+          ? "Months in current year"
+          : timeFilter === "month"
+            ? "Current month"
+            : "Months in selected range"
 
     return {
       monthlySpendingData,
       categoryData,
       recentTransactions,
       totalSpentCurrentMonth: totalSpent,
-      transactionCountCurrentMonth: currentMonthTransactions.length,
+      transactionCountCurrentMonth: filteredTransactions.length,
       largestExpenseAmount: largestExpense ? largestExpense.amount : 0,
       largestExpenseLabel: largestExpense?.description ?? "No expenses yet",
-      netFlowCurrentMonth,
+      netFlowInRange,
       spendingTrend,
+      periodSubtitle,
+      chartSubtitle,
     }
-  }, [transactions])
+  }, [customEndDate, customStartDate, timeFilter, transactions])
 
   return (
     <div>
@@ -195,6 +280,47 @@ export default function DashboardPage() {
         }
       />
 
+      <div className="mb-6 rounded-xl bg-card p-4 shadow-sm">
+        <div className="flex flex-wrap items-center gap-2">
+          {TIME_FILTERS.map((filter) => (
+            <Button
+              key={filter.value}
+              type="button"
+              variant={timeFilter === filter.value ? "default" : "outline"}
+              className={timeFilter === filter.value ? "bg-primary hover:bg-[#1D4ED8]" : ""}
+              onClick={() => setTimeFilter(filter.value)}
+            >
+              {filter.label}
+            </Button>
+          ))}
+        </div>
+
+        {timeFilter === "custom" && (
+          <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-end">
+            <label className="flex flex-col gap-1">
+              <span className="text-sm text-text-secondary">Start date</span>
+              <input
+                type="date"
+                className="rounded-md border border-border bg-background px-3 py-2 text-sm text-foreground"
+                value={customStartDate}
+                onChange={(event) => setCustomStartDate(event.target.value)}
+                max={customEndDate}
+              />
+            </label>
+            <label className="flex flex-col gap-1">
+              <span className="text-sm text-text-secondary">End date</span>
+              <input
+                type="date"
+                className="rounded-md border border-border bg-background px-3 py-2 text-sm text-foreground"
+                value={customEndDate}
+                onChange={(event) => setCustomEndDate(event.target.value)}
+                min={customStartDate}
+              />
+            </label>
+          </div>
+        )}
+      </div>
+
       {/* Stats Grid */}
       <div className="mb-8 grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
         <StatCard
@@ -206,7 +332,7 @@ export default function DashboardPage() {
         <StatCard
           label="Transactions"
           value={String(transactionCountCurrentMonth)}
-          subtitle="this month"
+          subtitle={periodSubtitle}
         />
         <StatCard
           label="Largest Expense"
@@ -216,9 +342,9 @@ export default function DashboardPage() {
         />
         <StatCard
           label="Net Flow"
-          value={formatNOK(netFlowCurrentMonth)}
-          valueColor={netFlowCurrentMonth >= 0 ? "success" : "danger"}
-          subtitle="this month"
+          value={formatNOK(netFlowInRange)}
+          valueColor={netFlowInRange >= 0 ? "success" : "danger"}
+          subtitle={periodSubtitle}
         />
       </div>
 
@@ -227,7 +353,7 @@ export default function DashboardPage() {
         {/* Monthly Spending Line Chart */}
         <div className="lg:col-span-3 min-w-0">
           <SectionCard title="Monthly spending">
-            <p className="mb-4 text-sm text-text-secondary">Last 12 months</p>
+            <p className="mb-4 text-sm text-text-secondary">{chartSubtitle}</p>
             <div className="h-72 w-full overflow-hidden">
               <ResponsiveContainer width="100%" height="100%">
                 <LineChart data={monthlySpendingData} margin={{ top: 5, right: 10, left: 0, bottom: 5 }}>

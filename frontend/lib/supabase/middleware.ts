@@ -14,45 +14,24 @@ export async function updateSession(request: NextRequest) {
     request,
   })
 
-  const supabase = createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-    {
-      cookies: {
-        getAll() {
-          return request.cookies.getAll()
-        },
-        setAll(cookiesToSet) {
-          cookiesToSet.forEach(({ name, value }) => request.cookies.set(name, value))
-
-          response = NextResponse.next({
-            request,
-          })
-
-          cookiesToSet.forEach(({ name, value, options }) => response.cookies.set(name, value, options))
-        },
-      },
-    },
-  )
-
-  const {
-    data: { user },
-  } = await supabase.auth.getUser()
+  // Check if user has a session by looking for auth cookie
+  const hasSession = request.cookies.has('sb-auth-token') || 
+                     request.cookies.has('sb-xanfnzrljcxwidbvhgca-auth-token')
 
   const isLoginRoute = request.nextUrl.pathname === '/login'
 
-  if (!user && !isLoginRoute) {
+  // Redirect unauthenticated users away from protected pages
+  if (!hasSession && !isLoginRoute) {
     const redirectUrl = request.nextUrl.clone()
     redirectUrl.pathname = '/login'
-
-    return withCopiedCookies(response, NextResponse.redirect(redirectUrl))
+    return NextResponse.redirect(redirectUrl)
   }
 
-  if (user && isLoginRoute) {
+  // Redirect authenticated users away from login page
+  if (hasSession && isLoginRoute) {
     const redirectUrl = request.nextUrl.clone()
     redirectUrl.pathname = '/dashboard'
-
-    return withCopiedCookies(response, NextResponse.redirect(redirectUrl))
+    return NextResponse.redirect(redirectUrl)
   }
 
   return response
